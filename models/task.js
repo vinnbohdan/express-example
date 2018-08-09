@@ -1,15 +1,15 @@
-'use strict';
+
 module.exports = (sequelize, DataTypes) => {
-  var Task = sequelize.define('Task', {
-    title: DataTypes.STRING
+  const Task = sequelize.define('Task', {
+    title: DataTypes.STRING,
   });
 
-  Task.associate = function (models) {
+  Task.associate = (models) => {
     models.Task.belongsTo(models.User, {
-      onDelete: "CASCADE",
+      onDelete: 'CASCADE',
       foreignKey: {
-        allowNull: false
-      }
+        allowNull: false,
+      },
     });
   };
 
