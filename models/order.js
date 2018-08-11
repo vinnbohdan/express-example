@@ -1,20 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var Order = sequelize.define('Order', {
-    // id: {
-    //   type: DataTypes.INTEGER,
-    //   autoIncrement: true,
-    //   primaryKey: true
-    // },
-    // id_customer: {
-    //   type: DataTypes.INTEGER,
-    //   foreignKey: true,
-    //   allowNull: false,
-    //   references: {
-    //     model: 'customer',
-    //     key: 'id'
-    //   }
-    // },
     date: {
       type: DataTypes.DATE,
       allowNull: false
@@ -50,15 +36,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: true
     },
-    createDate: {
-      type: DataTypes.DATE,
-      allowNull: false
-    },
-    modifyDate: {
-      type: DataTypes.DATE,
-      allowNull: false
-    },
-    removeDate: {
+    removedAt: {
       type: DataTypes.DATE,
       allowNull: true
     },
@@ -69,12 +47,11 @@ module.exports = (sequelize, DataTypes) => {
     editedBy: {
       type: DataTypes.STRING,
       allowNull: false
-    }
+    },
   });
 
   Order.associate = function (models) {
     models.Order.belongsTo(models.Customer, {
-      onDelete: 'CASCADE',
       foreignKey: {
         allowNull: false
       }
