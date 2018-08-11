@@ -1,11 +1,6 @@
 
 module.exports = (sequelize, DataTypes) => {
   let Customer = sequelize.define('Customer', {
-    // id: {
-    //   type: DataTypes.INTEGER,
-    //   autoIncrement: true,
-    //   primaryKey: true
-    // },
     role: {
       type: DataTypes.STRING,
       allowNull: false
@@ -49,15 +44,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
       validate: { isUrl: true }
     },
-    createDate: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    modifyDate: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    removeDate: {
+    removedAt: {
       type: DataTypes.DATE,
       allowNull: true,
     },
