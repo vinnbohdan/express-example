@@ -1,52 +1,49 @@
-'use strict';
-
-// Таблица товаров (Связана с категориями и подкатегориями)
 module.exports = (sequelize, DataTypes) => {
-  var Product = sequelize.define('Product', {
-    id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: true,
-      primaryKey: true
-    },
+  const Product = sequelize.define('Product', {
     name: {
-      type: DataTypes.STRING,       // название товара
-      allowNull: false
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     quantity: {
-      type: DataTypes.INTEGER,      // к-во товара на складе
+      type: DataTypes.INTEGER,
       defaultValue: 0,
-      validate: { isNumeric: true }
+      validate: { isNumeric: true },
+      allowNull: false,
     },
     cost: {
       type: DataTypes.INTEGER,
       defaultValue: 0,
-      validate: { isNumeric: true }
+      validate: { isNumeric: true },
+      allowNull: false,
     },
-    status: {  // товар в наличии, заканчивается, в дороге, снят с производства, нет в наличии
-      type: DataTypes.ENUM('product on the road', 'not available', 'product end', 'discontinued', 'in stock'),
-      defaultValue: 'in stock'
+    status: {
+      type: DataTypes.ENUM('product on the road', 'not available', 'product end', 'discontinued', 'in stock'), // eslint-disable-line new-cap
+      defaultValue: 'in stock',
     },
     icon: {
-      type: DataTypes.STRING, // картинка товара
-      validate: { isUrl: true }
+      type: DataTypes.STRING,
+      validate: { isUrl: true },
+      defaultValue: 'http://localhost:3000/public/images/default.png',
     },
     removedAt: {
       type: DataTypes.DATE,
-      allowNull: true
+      allowNull: true,
     },
     createdBy: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
     editedBy: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
   });
 
-  // Таблица товаров (Связана с категориями и подкатегориями)
   Product.associate = function (models) {
     models.Product.hasMany(models.OrderDetail);
+    // models.Product.belongsTo(models.OrderDetail, {
+    //   foreignKey: { allowNull: false },
+    // });
     models.Product.hasMany(models.Specification);
     models.Product.belongsTo(models.Category, {
       foreignKey: { allowNull: false },

@@ -1,22 +1,21 @@
-
 module.exports = (sequelize, DataTypes) => {
-  let Customer = sequelize.define('Customer', {
+  const Customer = sequelize.define('Customer', {
     role: {
       type: DataTypes.STRING,
-      allowNull: false
+      defaultValue: 'user',
     },
     first_name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     last_name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true
+      unique: true,
     },
     password: {
       type: DataTypes.STRING,
@@ -29,31 +28,35 @@ module.exports = (sequelize, DataTypes) => {
     },
     country: {
       type: DataTypes.STRING,
+      allowNull: true,
     },
     city: {
       type: DataTypes.STRING,
+      allowNull: true,
     },
     postcode: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     address: {
       type: DataTypes.STRING,
+      allowNull: true,
     },
     icon: {
       type: DataTypes.STRING,
       allowNull: true,
-      validate: { isUrl: true }
+      validate: { isUrl: true },
     },
     removedAt: {
       type: DataTypes.DATE,
       allowNull: true,
     },
     createdBy: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     editedBy: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
   });

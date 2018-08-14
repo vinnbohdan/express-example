@@ -1,28 +1,31 @@
-'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var OrderDetail = sequelize.define('OrderDetail', {
+  const OrderDetail = sequelize.define('OrderDetail', {
     quantity: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      defaultValue: 0,
     },
     price: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      defaultValue: 0,
     },
   });
 
   OrderDetail.associate = function (models) {
     models.OrderDetail.belongsTo(models.Order, {
       foreignKey: {
-        allowNull: false
+        allowNull: false,
       },
     });
     models.OrderDetail.belongsTo(models.Product, {
       foreignKey: {
-        allowNull: false
+        allowNull: false,
       },
     });
-  };
+        // models.OrderDetail.hasMany(models.Product);
+        // models.OrderDetail.hasMany(models.Order);
+    };
 
   return OrderDetail;
-};
+}
