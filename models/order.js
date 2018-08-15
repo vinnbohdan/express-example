@@ -1,61 +1,66 @@
-'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var Order = sequelize.define('Order', {
+  const Order = sequelize.define('Order', {
     date: {
       type: DataTypes.DATE,
-      allowNull: false
+      allowNull: false,
     },
     discount: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      defaultValue: 0,
     },
     total: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
     },
     total_with_discount: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
     },
     status: {
-      type: DataTypes.ENUM('pending', 'checkout', 'product end', 'on the road', 'delivered'),
-      defaultValue: 'pending'
+      type: DataTypes.ENUM('pending', 'checkout', 'product end', 'on the road', 'delivered'), // eslint-disable-line new-cap
+      defaultValue: 'pending',
     },
     country: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     city: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     postcode: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
     address: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     track_number: {
-      type: DataTypes.INTEGER,
-      allowNull: true
+      type: DataTypes.STRING,
+      allowNull: true,
     },
     removedAt: {
       type: DataTypes.DATE,
-      allowNull: true
+      allowNull: true,
     },
     createdBy: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
     editedBy: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
   });
 
   Order.associate = function (models) {
     models.Order.belongsTo(models.Customer, {
       foreignKey: {
-        allowNull: false
-      }
+        allowNull: false,
+      },
     });
+
     models.Order.hasMany(models.OrderDetail);
   };
 

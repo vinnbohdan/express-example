@@ -4,7 +4,7 @@ module.exports = {
       host: 'localhost',
       name: 'test',
       user: 'root',
-      password: 'example1',
+      password: '',
     },
   },
   test: {
@@ -12,7 +12,7 @@ module.exports = {
       host: 'localhost',
       name: 'test',
       user: 'root',
-      password: 'example',
+      password: '',
     },
   },
   production: {

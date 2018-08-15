@@ -1,39 +1,31 @@
-'use strict';
-
-// Таблица категорий (На нее ссылается таблица подкатегорий и товаров)
 module.exports = (sequelize, DataTypes) => {
-  var Category = sequelize.define('Category', {
-    id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: true,
-      primaryKey: true
-    },
+  const Category = sequelize.define('Category', {
     name: {
-      type: DataTypes.STRING,       // название категории
-      allowNull: false
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     description: {
-      type: DataTypes.TEXT
+      type: DataTypes.TEXT,
     },
     icon: {
-      type: DataTypes.STRING, // картинка товара
-      validate: { isUrl: true }
+      type: DataTypes.STRING,
+      validate: { isUrl: true },
+      defaultValue: 'http://localhost:3000/public/images/default.png',
     },
     removedAt: {
       type: DataTypes.DATE,
-      allowNull: true
+      allowNull: true,
     },
     createdBy: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
     editedBy: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
   });
 
-  // Таблица категорий (Имеет много категорий и товаров)
   Category.associate = function (models) {
     models.Category.hasMany(models.Subcategory);
     models.Category.hasMany(models.Product);
