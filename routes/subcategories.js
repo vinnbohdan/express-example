@@ -1,5 +1,7 @@
 const models = require('../models');
 const express = require('express');
+const validate = require('express-validation');
+const paramValidation = require('../paramValidationSubcategory');
 
 const router = express.Router(); // eslint-disable-line new-cap
 
@@ -13,7 +15,9 @@ router.get('/', (req, res) => {
 });
 
 // create new instance and return id
-router.post('/', (req, res) => {
+router.route('/')
+.post(validate(paramValidation.create))
+.post((req, res) => {
   models.Subcategory.create({
     name: req.body.name,
     createdBy: req.body.createdBy,
@@ -24,9 +28,11 @@ router.post('/', (req, res) => {
 });
 
 // update instance
-router.put('/:id', (req, res) => {
+router.route('/:id')
+.put(validate(paramValidation.update))
+.put((req, res) => {
   models.Subcategory.update({
-    name: req.body.newname,
+    name: req.body.name,
   }, {
     where: { id: req.params.id },
   }).then(() => {
@@ -35,7 +41,9 @@ router.put('/:id', (req, res) => {
 });
 
 // delete instance
-router.delete('/:id', (req, res) => {
+router.route('/:id')
+.delete(validate(paramValidation.delete))
+.delete((req, res) => {
   models.Subcategory.destroy({
     where: {
       id: req.params.id,

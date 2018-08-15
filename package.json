@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "cross-env DEBUG=express-sequelize node ./bin/www",
+    "start": "cross-env DEBUG=express-sequelize nodemon node ./bin/www",
     "test": "npm run test-unit && npm run test-integration",
     "test-unit": "cross-env NODE_ENV=test ./node_modules/.bin/mocha test/unit/*.test.js",
     "test-integration": "cross-env NODE_ENV=test ./node_modules/.bin/mocha test/integration/*.test.js",
     "lint": "esw *.js routes config models bin --color",
-    "fix": "esw *.js routes config models bin --color --fix"
+    "fix": "esw *.js routes config models bin --color --fix",
+    "precommit": "yarn run fix"
   },
   "dependencies": {
     "bluebird": "^3.5.1",
@@ -16,13 +17,17 @@
     "cookie-parser": "^1.4.3",
     "debug": "^3.1.0",
     "express": "^4.16.2",
+    "express-validation": "^1.0.2",
+    "http-status": "^1.2.0",
+    "joi": "^13.6.0",
     "morgan": "^1.7.0",
     "mysql": "^2.16.0",
+    "nodemon": "^1.18.3",
     "pg": "^6.1.0",
     "pug": "^2.0.0-rc.4",
     "sequelize": "^3.23.6",
     "sequelize-cli": "^3.1.0",
-    "serve-favicon": "~2.3.0",
+    "serve-favicon": "^2.5.0",
     "sqlite3": "^3.0.8"
   },
   "devDependencies": {

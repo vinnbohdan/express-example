@@ -1,7 +1,7 @@
 const models = require('../models');
 const express = require('express');
 
-const router = express.Router(); 
+const router = express.Router(); // eslint-disable-line new-cap
 
 
 router.get('/', (req, res) => {
@@ -19,9 +19,9 @@ router.post('/create', (req, res) => {
     quantity: req.body.quantity,
     price: req.body.price,
   }).then((orderDetails) => {
-    res.status(201).json({ id: orderDetails.get('id'), 
-                           date: orderDetails.get('quantity'), 
-                           track_number: orderDetails.get('price')});
+    res.status(201).json({ id: orderDetails.get('id'),
+      date: orderDetails.get('quantity'),
+      track_number: orderDetails.get('price') });
   });
 });
 

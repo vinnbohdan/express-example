@@ -11,7 +11,6 @@ module.exports = (sequelize, DataTypes) => {
     icon: {
       type: DataTypes.STRING,
       validate: { isUrl: true },
-      defaultValue: 'http://localhost:3000/public/images/default.png',
     },
     removedAt: {
       type: DataTypes.DATE,

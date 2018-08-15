@@ -1,5 +1,7 @@
 const models = require('../models');
 const express = require('express');
+const validate = require('express-validation');
+const paramValidation = require('../paramValidationProduct');
 
 const router = express.Router(); // eslint-disable-line new-cap
 
@@ -12,32 +14,10 @@ router.get('/', (req, res) => {
   });
 });
 
-// return list of products cheaper than 'cost'
-// router.get('/:cost', (req, res) => {
-//   models.Product.findAll({
-//     attributes: ['name', 'quantity', 'cost'],
-//     where: {
-//       cost: {
-//         $lte: req.params.cost,
-//       },
-//     },
-//     include: [
-//       {
-//         model: models.Category,
-//         attributes: ['name'],
-//       },
-//       {
-//         model: models.Subcategory,
-//         attributes: ['name'],
-//       },
-//     ],
-//   }).then((products) => {
-//     res.status(200).json(products);
-//   });
-// });
-
 // create new instance and return id and name
-router.post('/', (req, res) => {
+router.route('/')
+.post(validate(paramValidation.create))
+.post((req, res) => {
   models.Product.create({
     CategoryId: req.body.categoryid,
     SubcategoryId: req.body.subcategoryid,
@@ -53,9 +33,11 @@ router.post('/', (req, res) => {
 });
 
 // update instance
-router.put('/:id', (req, res) => {
+router.route('/:id')
+.put(validate(paramValidation.update))
+.put((req, res) => {
   models.Product.update({
-    cost: req.body.newcost,
+    cost: req.body.cost,
   }, {
     where: { id: req.params.id },
   }).then(() => {
@@ -64,7 +46,9 @@ router.put('/:id', (req, res) => {
 });
 
 // delete instance
-router.delete('/:id', (req, res) => {
+router.route('/:id')
+.delete(validate(paramValidation.delete))
+.delete((req, res) => {
   models.Product.destroy({
     where: {
       id: req.params.id,

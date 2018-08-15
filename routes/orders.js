@@ -1,14 +1,14 @@
 const models = require('../models');
 const express = require('express');
 
-const router = express.Router(); 
+const router = express.Router(); // eslint-disable-line new-cap
 
 
 router.get('/', (req, res) => {
   models.Order.findAll({
     attributes: ['id', 'date', 'total', 'track_number'],
   }).then((orders) => {
-    res.status(200).json(orders); 
+    res.status(200).json(orders);
   });
 });
 
@@ -26,9 +26,9 @@ router.post('/create', (req, res) => {
     createdBy: req.body.createdBy,
     editedBy: req.body.editedBy,
   }).then((order) => {
-    res.status(201).json({ id: order.get('id'), 
-                           date: order.get('date'), 
-                           track_number: order.get('track_number')});
+    res.status(201).json({ id: order.get('id'),
+      date: order.get('date'),
+      track_number: order.get('track_number') });
   });
 });
 
