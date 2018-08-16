@@ -26,7 +26,7 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  Category.associate = function (models) {
+  Category.associate = function (models) {   /* eslint func-names: ["error", "never"] */
     models.Category.hasMany(models.Subcategory);
     models.Category.hasMany(models.Product);
   };

@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "precommit": "yarn run fix",
     "start": "cross-env DEBUG=express-sequelize node ./bin/www",
     "test": "npm run test-unit && npm run test-integration",
     "test-unit": "cross-env NODE_ENV=test ./node_modules/.bin/mocha test/unit/*.test.js",
@@ -16,6 +17,9 @@
     "cookie-parser": "^1.4.3",
     "debug": "^3.1.0",
     "express": "^4.16.2",
+    "express-validation": "^1.0.2",
+    "http-status": "^1.2.0",
+    "joi": "^13.6.0",
     "morgan": "^1.7.0",
     "mysql": "^2.16.0",
     "pg": "^6.1.0",

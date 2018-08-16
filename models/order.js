@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
     postcode: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     address: {
@@ -54,6 +54,7 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
+  /* eslint func-names: ["error", "never"] */
   Order.associate = function (models) {
     models.Order.belongsTo(models.Customer, {
       foreignKey: {

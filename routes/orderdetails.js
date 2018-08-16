@@ -1,8 +1,9 @@
 const models = require('../models');
-const express = require('express');
+const express = require('express');  /* eslint linebreak-style: ["error", "windows"] */
+const validate = require('express-validation');
+const validation = require('../validation');
 
-const router = express.Router(); 
-
+const router = express.Router(); /* eslint new-cap: [2, {"capIsNewExceptions": ["Router"]}] */
 
 router.get('/', (req, res) => {
   models.OrderDetail.findAll({
@@ -12,21 +13,23 @@ router.get('/', (req, res) => {
   });
 });
 
-router.post('/create', (req, res) => {
+router.route('/create')
+.post(validate(validation.orderDetailValidation.create))
+.post((req, res) => {
   models.OrderDetail.create({
     ProductId: req.body.ProductId,
     OrderId: req.body.OrderId,
     quantity: req.body.quantity,
     price: req.body.price,
   }).then((orderDetails) => {
-    res.status(201).json({ id: orderDetails.get('id'), 
-                           date: orderDetails.get('quantity'), 
-                           track_number: orderDetails.get('price')});
+    res.status(201).json({ id: orderDetails.get('id'), date: orderDetails.get('quantity'), price: orderDetails.get('price') });
   });
 });
 
 
-router.put('/:id/edit', (req, res) => {
+router.route('/:id(\\d+)/edit')
+.put(validate(validation.orderDetailValidation.update))
+.put((req, res) => {
   models.OrderDetail.update({
     ProductId: req.body.ProductId,
     OrderId: req.body.OrderId,
@@ -40,7 +43,9 @@ router.put('/:id/edit', (req, res) => {
 });
 
 
-router.delete('/:id/destroy', (req, res) => {
+router.route('/:id(\\d+)/destroy')
+.delete(validate(validation.orderDetailValidation.delete))
+.delete((req, res) => {
   models.OrderDetail.destroy({
     where: {
       id: req.params.id,

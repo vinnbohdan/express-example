@@ -27,6 +27,7 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
+  /* eslint func-names: ["error", "never"] */
   Subcategory.associate = function (models) {
     models.Subcategory.hasMany(models.Specification);
     models.Subcategory.hasMany(models.Product);

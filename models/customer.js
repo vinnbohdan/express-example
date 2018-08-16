@@ -24,7 +24,6 @@ module.exports = (sequelize, DataTypes) => {
     phone: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: { isNumeric: true },
     },
     country: {
       type: DataTypes.STRING,
@@ -61,6 +60,7 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
+  /* eslint func-names: ["error", "never"] */
   Customer.associate = function (models) {
     models.Customer.hasMany(models.Order);
     models.Customer.hasMany(models.PaymentMethod);

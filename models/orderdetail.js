@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  OrderDetail.associate = function (models) {
+  OrderDetail.associate = function (models) {  /* eslint func-names: ["error", "never"] */
     models.OrderDetail.belongsTo(models.Order, {
       foreignKey: {
         allowNull: false,
@@ -23,9 +23,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
     });
-        // models.OrderDetail.hasMany(models.Product);
-        // models.OrderDetail.hasMany(models.Order);
-    };
+  };
 
   return OrderDetail;
-}
+};

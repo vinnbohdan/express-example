@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
+  /* eslint func-names: ["error", "never"] */
   PaymentMethod.associate = function (models) {
     models.PaymentMethod.belongsTo(models.Customer, {
       foreignKey: {

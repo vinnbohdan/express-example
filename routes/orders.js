@@ -1,18 +1,21 @@
 const models = require('../models');
 const express = require('express');
+const validate = require('express-validation');
+const validation = require('../validation');
 
-const router = express.Router(); 
-
+const router = express.Router(); /* eslint new-cap: [2, {"capIsNewExceptions": ["Router"]}] */
 
 router.get('/', (req, res) => {
   models.Order.findAll({
     attributes: ['id', 'date', 'total', 'track_number'],
   }).then((orders) => {
-    res.status(200).json(orders); 
+    res.status(200).json(orders);
   });
 });
 
-router.post('/create', (req, res) => {
+router.route('/create')
+.post(validate(validation.orderValidation.create))
+.post((req, res) => {
   models.Order.create({
     CustomerId: req.body.CustomerId,
     date: req.body.date,
@@ -26,14 +29,16 @@ router.post('/create', (req, res) => {
     createdBy: req.body.createdBy,
     editedBy: req.body.editedBy,
   }).then((order) => {
-    res.status(201).json({ id: order.get('id'), 
-                           date: order.get('date'), 
-                           track_number: order.get('track_number')});
+    res.status(201).json({ id: order.get('id'),
+      date: order.get('date'),
+      track_number: order.get('track_number') });
   });
 });
 
 
-router.put('/:id/edit', (req, res) => {
+router.route('/:id(\\d+)/edit')
+.put(validate(validation.orderValidation.update))
+.put((req, res) => {
   models.Order.update({
     CustomerId: req.body.CustomerId,
     date: req.body.date,
@@ -52,7 +57,9 @@ router.put('/:id/edit', (req, res) => {
 });
 
 
-router.delete('/:id/destroy', (req, res) => {
+router.route('/:id(\\d+)/destroy')
+.delete(validate(validation.orderValidation.delete))
+.delete((req, res) => {
   models.Order.destroy({
     where: {
       id: req.params.id,

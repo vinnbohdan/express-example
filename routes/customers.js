@@ -1,8 +1,9 @@
 const models = require('../models');
 const express = require('express');
+const validate = require('express-validation');
+const validation = require('../validation');
 
-const router = express.Router(); 
-
+const router = express.Router(); // eslint-disable-line new-cap
 
 router.get('/', (req, res) => {
   models.Customer.findAll({
@@ -13,7 +14,9 @@ router.get('/', (req, res) => {
 });
 
 
-router.post('/create', (req, res) => {
+router.route('/create')
+.post(validate(validation.customerValidation.create))
+.post((req, res) => {
   models.Customer.create({
     first_name: req.body.first_name,
     last_name: req.body.last_name,
@@ -23,12 +26,14 @@ router.post('/create', (req, res) => {
     createdBy: req.body.createdBy,
     editedBy: req.body.editedBy,
   }).then((customer) => {
-    res.status(201).json({ id: customer.get('id'), firstName: customer.get('first_name')});
+    res.status(201).json({ id: customer.get('id'), firstName: customer.get('first_name'), lastName: customer.get('last_name') });
   });
 });
 
 
-router.put('/:id/edit', (req, res) => {
+router.route('/:id(\\d+)/edit')
+.put(validate(validation.customerValidation.update))
+.put((req, res) => {
   models.Customer.update({
     first_name: req.body.first_name,
     last_name: req.body.last_name,
@@ -42,8 +47,9 @@ router.put('/:id/edit', (req, res) => {
   });
 });
 
-
-router.delete('/:id/destroy', (req, res) => {
+router.route('/:id(\\d+)/destroy')
+.delete(validate(validation.customerValidation.delete))
+.delete((req, res) => {
   models.Customer.destroy({
     where: {
       id: req.params.id,

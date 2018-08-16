@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
+  /* eslint func-names: ["error", "never"] */
   Specification.associate = function (models) {
     models.Specification.belongsTo(models.Product);
     models.Specification.belongsTo(models.Subcategory);

@@ -39,11 +39,9 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  Product.associate = function (models) {
+  Product.associate = function (models) {   /* eslint func-names: ["error", "never"] */
     models.Product.hasMany(models.OrderDetail);
-    // models.Product.belongsTo(models.OrderDetail, {
-    //   foreignKey: { allowNull: false },
-    // });
+
     models.Product.hasMany(models.Specification);
     models.Product.belongsTo(models.Category, {
       foreignKey: { allowNull: false },
