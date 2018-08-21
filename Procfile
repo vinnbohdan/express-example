@@ -1,1 +1,1 @@
-api: NODE_ENV=production node ./bin/www
+web: NODE_ENV=production node ./bin/www
