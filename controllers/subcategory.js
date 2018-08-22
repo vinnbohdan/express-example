@@ -9,11 +9,9 @@ function getAllSubcategories(req, res) {
 }
 
 function postSubcategory(req, res) {
-  models.Subcategory.create({
-    name: req.body.name,
-    createdBy: req.body.createdBy,
-    editedBy: req.body.editedBy,
-  }).then((newsubcategory) => {
+  models.Subcategory
+  .create(req.body)
+  .then((newsubcategory) => {
     res.status(201).json({ id: newsubcategory.get('id') });
   });
 }

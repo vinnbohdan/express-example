@@ -3,17 +3,16 @@ const models = require('../models');
 function getAllCategories(req, res) {
   models.Category.findAll({
     attributes: ['id', 'name'],
-  }).then((categories) => {
+  })
+  .then((categories) => {
     res.status(200).json(categories);
   });
 }
 
 function postCategory(req, res) {
-  models.Category.create({
-    name: req.body.name,
-    createdBy: req.body.createdBy,
-    editedBy: req.body.editedBy,
-  }).then((newcategory) => {
+  models.Category
+  .create(req.body)
+  .then((newcategory) => {
     res.status(201).json({ id: newcategory.get('id') });
   });
 }

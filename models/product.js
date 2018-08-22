@@ -34,7 +34,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     editedBy: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   });
 

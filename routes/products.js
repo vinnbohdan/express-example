@@ -7,6 +7,7 @@ const router = express.Router(); // eslint-disable-line new-cap
 
 // return list of products
 router.route('/')
+.get(validate(paramValidation.product.getPage))
 .get(productController.getAllProducts);
 
 // create new instance and return id and name

@@ -1,24 +1,21 @@
 const models = require('../models');
 
 function getAllProducts(req, res) {
-  models.Product.findAll({
-    attributes: ['name', 'quantity', 'cost'],
+  const page = req.query.page || 1;
+  models.Product.findAndCountAll({
+    attributes: ['id', 'name', 'quantity', 'cost'],
+    offset: (page - 1) * 2,
+    limit: 2,
   }).then((products) => {
-    res.status(200).json(products);
+    res.set('x-total-count', products.count);
+    res.status(200).json(products.rows);
   });
 }
 
 function postProduct(req, res) {
-  models.Product.create({
-    CategoryId: req.body.categoryid,
-    SubcategoryId: req.body.subcategoryid,
-    name: req.body.name,
-    quantity: req.body.quantity,
-    cost: req.body.cost,
-    status: req.body.status,
-    createdBy: req.body.createdBy,
-    editedBy: req.body.editedBy,
-  }).then((newproduct) => {
+  models.Product
+  .create(req.body)
+  .then((newproduct) => {
     res.status(201).json({ id: newproduct.get('id') });
   });
 }
