@@ -2,9 +2,11 @@ module.exports = {
   development: {
     db: {
       host: 'localhost',
-      name: 'test',
+      name: process.env.DB_NAME || 'test',
       user: 'root',
-      password: process.env.DB_PASSWORD || '',
+      password: process.env.DB_PASSWORD || 'example',
+      // jwtSecret: '',
+      // jwtExpiresIn: 24 * 60 * 60,
     },
   },
   test: {
@@ -12,7 +14,7 @@ module.exports = {
       host: 'localhost',
       name: 'test',
       user: 'root',
-      password: '',
+      password: 'example',
     },
   },
   production: {
