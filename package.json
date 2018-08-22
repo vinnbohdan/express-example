@@ -10,7 +10,7 @@
     "lint": "esw *.js routes config models controllers bin --color",
     "fix": "esw *.js routes config models controllers bin --color --fix",
     "precommit": "yarn run fix",
-    "heroku-prebuild": "NODE_ENV=development npm i -g node-gyp && yarn install",
+    "heroku-prebuild": "NODE_ENV=development npm i -g node-gyp && yarn install"
   },
   "dependencies": {
     "async": "^2.6.1",
