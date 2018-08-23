@@ -1,0 +1,2 @@
+INSERT INTO test.Customers (role, first_name, last_name, email, password, salt, phone, createdBy, createdAt, updatedAt)
+VALUES ('admin', 'White', 'Clover', 'aa@ua.ua', 'gX4TdfqKJAaHsm4or9KO0w', '2A3C75A40304C34FF75CDE07F169B05F', '555-11-22-33', 1, '1996-07-04', '1996-07-04');

@@ -5,8 +5,8 @@ module.exports = {
       name: process.env.DB_NAME || 'test',
       user: 'root',
       password: process.env.DB_PASSWORD || 'example',
-      // jwtSecret: '',
-      // jwtExpiresIn: 24 * 60 * 60,
+      jwtSecret: 'secret_word',
+      jwtExpiresIn: 24 * 60 * 60,
     },
   },
   test: {
