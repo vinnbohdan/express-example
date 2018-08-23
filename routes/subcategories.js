@@ -1,48 +1,24 @@
-const models = require('../models');
 const express = require('express');
+const validate = require('express-validation');
+const validation = require('../config/validation');
+const subCategoryController = require('../controllers/subcategory');
 
 const router = express.Router(); // eslint-disable-line new-cap
 
-// return list of subcategories
-router.get('/', (req, res) => {
-  models.Subcategory.findAll({
-    attributes: ['id', 'name'],
-  }).then((subcategories) => {
-    res.status(200).json(subcategories);
-  });
-});
+router.route('/').get(subCategoryController.getAllSubcategories);
 
-// create new instance and return id
-router.post('/', (req, res) => {
-  models.Subcategory.create({
-    name: req.body.name,
-    createdBy: req.body.createdBy,
-    editedBy: req.body.editedBy,
-  }).then((newsubcategory) => {
-    res.status(201).json({ id: newsubcategory.get('id') });
-  });
-});
+router.route('/create')
+.post(validate(validation.subCategoryValidation.create))
+.post(subCategoryController.postSubcategory);
 
-// update instance
-router.put('/:id', (req, res) => {
-  models.Subcategory.update({
-    name: req.body.newname,
-  }, {
-    where: { id: req.params.id },
-  }).then(() => {
-    res.status(200).end();
-  });
-});
+router.route('/:id(\\d+)/edit')
+.put(validate(validation.subCategoryValidation.update))
+.put(subCategoryController.putSubcategory);
 
-// delete instance
-router.delete('/:id', (req, res) => {
-  models.Subcategory.destroy({
-    where: {
-      id: req.params.id,
-    },
-  }).then(() => {
-    res.status(204).end();
-  });
-});
+
+router.route('/:id(\\d+)/destroy')
+.delete(validate(validation.subCategoryValidation.delete))
+.delete(subCategoryController.deleteSubcategory);
+
 
 module.exports = router;

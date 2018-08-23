@@ -17,7 +17,6 @@ module.exports = {
   },
   production: {
     db: {
-
       host: process.env.DB_HOSTNAME,
       name: process.env.DB_NAME,
       user: process.env.DB_USERNAME,

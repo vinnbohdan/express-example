@@ -1,72 +1,22 @@
-const models = require('../models');
 const express = require('express');
 const validate = require('express-validation');
-const validation = require('../validation');
+const validation = require('../config/validation');
+const ordersController = require('../controllers/orders');
 
-const router = express.Router(); /* eslint new-cap: [2, {"capIsNewExceptions": ["Router"]}] */
+const router = express.Router(); // eslint-disable-line new-cap
 
-router.get('/', (req, res) => {
-  models.Order.findAll({
-    attributes: ['id', 'date', 'total', 'track_number'],
-  }).then((orders) => {
-    res.status(200).json(orders);
-  });
-});
+router.route('/').get(ordersController.GetOrders);
 
 router.route('/create')
-.post(validate(validation.orderValidation.create))
-.post((req, res) => {
-  models.Order.create({
-    CustomerId: req.body.CustomerId,
-    date: req.body.date,
-    total: req.body.total,
-    total_with_discount: req.body.total_with_discount,
-    country: req.body.country,
-    city: req.body.city,
-    postcode: req.body.postcode,
-    address: req.body.address,
-    track_number: req.body.track_number,
-    createdBy: req.body.createdBy,
-    editedBy: req.body.editedBy,
-  }).then((order) => {
-    res.status(201).json({ id: order.get('id'),
-      date: order.get('date'),
-      track_number: order.get('track_number') });
-  });
-});
-
+.post(validate(validation.customerValidation.create))
+.post(ordersController.CreateOrders);
 
 router.route('/:id(\\d+)/edit')
-.put(validate(validation.orderValidation.update))
-.put((req, res) => {
-  models.Order.update({
-    CustomerId: req.body.CustomerId,
-    date: req.body.date,
-    total: req.body.total,
-    total_with_discount: req.body.total_with_discount,
-    country: req.body.country,
-    city: req.body.city,
-    postcode: req.body.postcode,
-    address: req.body.address,
-    track_number: req.body.track_number,
-  }, {
-    where: { id: req.params.id },
-  }).then(() => {
-    res.status(200).end();
-  });
-});
-
+.put(validate(validation.customerValidation.update))
+.put(ordersController.EditOrders);
 
 router.route('/:id(\\d+)/destroy')
-.delete(validate(validation.orderValidation.delete))
-.delete((req, res) => {
-  models.Order.destroy({
-    where: {
-      id: req.params.id,
-    },
-  }).then(() => {
-    res.status(204).end();
-  });
-});
+.delete(validate(validation.customerValidation.delete))
+.delete(ordersController.DeleteOrders);
 
 module.exports = router;
