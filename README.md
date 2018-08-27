@@ -1,5 +1,8 @@
 # Express Example
 
+DataBase Model Source [http://ondras.zarovi.cz/sql/demo/](http://ondras.zarovi.cz/sql/demo/). 
+For loading data select Save/Load->Server Load->Enter "Store"
+
 This repository demonstrates the usage of Sequelize within an [Express](https://expressjs.com) application.
 The implemented logic is a simple task tracking tool.
 

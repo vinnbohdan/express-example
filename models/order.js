@@ -50,7 +50,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     editedBy: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   });
 
@@ -61,7 +61,11 @@ module.exports = (sequelize, DataTypes) => {
       },
     });
 
-    models.Order.hasMany(models.OrderDetail);
+    models.Order.hasMany(models.OrderDetail, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
   };
 
   return Order;

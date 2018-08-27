@@ -18,13 +18,21 @@ module.exports = (sequelize, DataTypes) => {
     },
     editedBy: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   });
 
   Specification.associate = function (models) {
-    models.Specification.belongsTo(models.Product);
-    models.Specification.belongsTo(models.Subcategory);
+    models.Specification.belongsTo(models.Product, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
+    models.Specification.belongsTo(models.Subcategory, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
   };
 
   return Specification;

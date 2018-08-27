@@ -18,12 +18,11 @@ module.exports = (sequelize, DataTypes) => {
     },
     status: {
       type: DataTypes.ENUM('product on the road', 'not available', 'product end', 'discontinued', 'in stock'), // eslint-disable-line new-cap
-      defaultValue: 'in stock',
+      allowNull: false,
     },
     icon: {
       type: DataTypes.STRING,
       validate: { isUrl: true },
-      defaultValue: 'http://localhost:3000/public/images/default.png',
     },
     removedAt: {
       type: DataTypes.DATE,
@@ -35,16 +34,21 @@ module.exports = (sequelize, DataTypes) => {
     },
     editedBy: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   });
 
   Product.associate = function (models) {
-    models.Product.hasMany(models.OrderDetail);
-    // models.Product.belongsTo(models.OrderDetail, {
-    //   foreignKey: { allowNull: false },
-    // });
-    models.Product.hasMany(models.Specification);
+    models.Product.hasMany(models.OrderDetail, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
+    models.Product.hasMany(models.Specification, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
     models.Product.belongsTo(models.Category, {
       foreignKey: { allowNull: false },
     });

@@ -3,6 +3,7 @@ module.exports = (sequelize, DataTypes) => {
     role: {
       type: DataTypes.STRING,
       defaultValue: 'user',
+      allowNull: false,
     },
     first_name: {
       type: DataTypes.STRING,
@@ -18,6 +19,10 @@ module.exports = (sequelize, DataTypes) => {
       unique: true,
     },
     password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    salt: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -57,7 +62,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     editedBy: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   });
 

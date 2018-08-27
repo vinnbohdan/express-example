@@ -11,7 +11,6 @@ module.exports = (sequelize, DataTypes) => {
     icon: {
       type: DataTypes.STRING,
       validate: { isUrl: true },
-      defaultValue: 'http://localhost:3000/public/images/default.png',
     },
     removedAt: {
       type: DataTypes.DATE,
@@ -23,13 +22,21 @@ module.exports = (sequelize, DataTypes) => {
     },
     editedBy: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   });
 
   Subcategory.associate = function (models) {
-    models.Subcategory.hasMany(models.Specification);
-    models.Subcategory.hasMany(models.Product);
+    models.Subcategory.hasMany(models.Specification, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
+    models.Subcategory.hasMany(models.Product, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
     models.Subcategory.belongsTo(models.Category, {
       foreignKey: { allowNull: false },
     });
