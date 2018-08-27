@@ -19,6 +19,9 @@ const routes = require('./routes/index');
 const products = require('./routes/products');
 const categories = require('./routes/categories');
 const subcategories = require('./routes/subcategories');
+const orders = require('./routes/orders');
+const customers = require('./routes/customers');
+const orderDetails = require('./routes/orderdetails');
 
 const app = express();
 
@@ -99,6 +102,9 @@ app.use('/', routes);
 app.use('/api/products', products);
 app.use('/api/categories', categories);
 app.use('/api/subcategories', subcategories);
+app.use('/orders', orders);
+app.use('/customers', customers);
+app.use('/orderdetails', orderDetails);
 
 // if error is not an instanceOf APIError, convert it.
 app.use((err, req, res, next) => {
