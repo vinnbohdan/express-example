@@ -7,7 +7,12 @@ const router = express.Router(); // eslint-disable-line new-cap
 
 // return list of subcategories
 router.route('/')
+.get(validate(paramValidation.subcategory.getAll))
 .get(subcategoryController.getAllSubcategories);
+
+router.route('/:id')
+.get(validate(paramValidation.subcategory.getAll))
+.get(subcategoryController.getSubcategories);
 
 // create new instance and return id
 router.route('/')

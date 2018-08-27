@@ -23,8 +23,16 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Specification.associate = function (models) {
-    models.Specification.belongsTo(models.Product);
-    models.Specification.belongsTo(models.Subcategory);
+    models.Specification.belongsTo(models.Product, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
+    models.Specification.belongsTo(models.Subcategory, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
   };
 
   return Specification;

@@ -3,7 +3,20 @@ const models = require('../models');
 function getAllSubcategories(req, res) {
   models.Subcategory.findAll({
     attributes: ['id', 'name'],
-  }).then((subcategories) => {
+  })
+  .then((subcategories) => {
+    res.status(200).json(subcategories);
+  });
+}
+
+function getSubcategories(req, res) {
+  models.Subcategory.findAll({
+    attributes: ['id', 'name'],
+    where: {
+      CategoryId: req.params.id,
+    },
+  })
+  .then((subcategories) => {
     res.status(200).json(subcategories);
   });
 }
@@ -38,6 +51,7 @@ function deleteSubcategory(req, res) {
 
 module.exports = {
   getAllSubcategories,
+  getSubcategories,
   postSubcategory,
   putSubcategory,
   deleteSubcategory,

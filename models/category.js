@@ -26,8 +26,16 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Category.associate = function (models) {
-    models.Category.hasMany(models.Subcategory);
-    models.Category.hasMany(models.Product);
+    models.Category.hasMany(models.Subcategory, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
+    models.Category.hasMany(models.Product, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
   };
 
   return Category;

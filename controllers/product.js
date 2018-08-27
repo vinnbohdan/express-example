@@ -4,8 +4,11 @@ function getAllProducts(req, res) {
   const page = req.query.page || 1;
   models.Product.findAndCountAll({
     attributes: ['id', 'name', 'quantity', 'cost'],
-    offset: (page - 1) * 2,
-    limit: 2,
+    offset: (page - 1) * 5,
+    limit: 5,
+    where: {
+      SubcategoryId: req.params.id,
+    },
   }).then((products) => {
     res.set('x-total-count', products.count);
     res.status(200).json(products.rows);

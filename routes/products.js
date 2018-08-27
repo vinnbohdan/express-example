@@ -6,7 +6,7 @@ const productController = require('../controllers/product');
 const router = express.Router(); // eslint-disable-line new-cap
 
 // return list of products
-router.route('/')
+router.route('/:id')
 .get(validate(paramValidation.product.getPage))
 .get(productController.getAllProducts);
 

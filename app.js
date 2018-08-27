@@ -96,9 +96,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 // app.use('/users', users);
 
-app.use('/products', products);
-app.use('/categories', categories);
-app.use('/subcategories', subcategories);
+app.use('/api/products', products);
+app.use('/api/categories', categories);
+app.use('/api/subcategories', subcategories);
 
 // if error is not an instanceOf APIError, convert it.
 app.use((err, req, res, next) => {

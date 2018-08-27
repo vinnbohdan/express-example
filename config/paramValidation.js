@@ -6,6 +6,9 @@ module.exports = {
       query: {
         page: Joi.number().integer().min(1),
       },
+      params: {
+        id: Joi.number().integer().min(1),
+      },
       options: {
         allowUnknownBody: false,
         allowUnknownHeaders: false,
@@ -65,6 +68,14 @@ module.exports = {
     },
   },
   category: {
+    getAll: {
+      options: {
+        allowUnknownBody: false,
+        allowUnknownHeaders: false,
+        allowUnknownQuery: false,
+        allowUnknownParams: false,
+      },
+    },
     create: {
       body: {
         name: Joi.string().min(2).required(),
@@ -109,6 +120,25 @@ module.exports = {
     },
   },
   subcategory: {
+    getAll: {
+      options: {
+        allowUnknownBody: false,
+        allowUnknownHeaders: false,
+        allowUnknownQuery: false,
+        allowUnknownParams: false,
+      },
+    },
+    get: {
+      params: {
+        CategoryId: Joi.number().integer().min(1).required(),
+      },
+      options: {
+        allowUnknownBody: false,
+        allowUnknownHeaders: false,
+        allowUnknownQuery: false,
+        allowUnknownParams: false,
+      },
+    },
     create: {
       body: {
         CategoryId: Joi.number().integer().min(1).required(),
