@@ -8,6 +8,7 @@ module.exports = {
       // jwtSecret: 'secret_word',
       // jwtExpiresIn: 24 * 60 * 60,
     },
+    productPageLimit: 20,
   },
   test: {
     db: {
@@ -23,6 +24,7 @@ module.exports = {
       name: process.env.DB_NAME,
       user: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
+      // productPageLimit: process.env.PROD_LIMIT,
       // jwtSecret: process.env.SECRET,
       // jwtExpiresIn: process.env.EXPIRES,
     },

@@ -4,6 +4,18 @@ module.exports = {
   product: {
     getPage: {
       query: {
+        hot: Joi.boolean(),
+        page: Joi.number().integer().min(1),
+      },
+      options: {
+        allowUnknownBody: false,
+        allowUnknownHeaders: false,
+        allowUnknownQuery: false,
+        allowUnknownParams: false,
+      },
+    },
+    getById: {
+      query: {
         page: Joi.number().integer().min(1),
       },
       params: {
@@ -128,9 +140,9 @@ module.exports = {
         allowUnknownParams: false,
       },
     },
-    get: {
+    getByCategId: {
       params: {
-        CategoryId: Joi.number().integer().min(1).required(),
+        id: Joi.number().integer().min(1).required(),
       },
       options: {
         allowUnknownBody: false,

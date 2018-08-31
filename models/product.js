@@ -24,6 +24,9 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       validate: { isUrl: true },
     },
+    hotprice: {
+      type: DataTypes.BOOLEAN,
+    },
     removedAt: {
       type: DataTypes.DATE,
       allowNull: true,

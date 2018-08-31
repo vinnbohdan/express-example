@@ -11,7 +11,7 @@ router.route('/')
 .get(subcategoryController.getAllSubcategories);
 
 router.route('/:id')
-.get(validate(paramValidation.subcategory.getAll))
+.get(validate(paramValidation.subcategory.getByCategId))
 .get(subcategoryController.getSubcategories);
 
 // create new instance and return id

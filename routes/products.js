@@ -6,23 +6,27 @@ const productController = require('../controllers/product');
 const router = express.Router(); // eslint-disable-line new-cap
 
 // return list of products
+router.route('/')
+  .get(validate(paramValidation.product.getPage))
+  .get(productController.getProducts);
+
 router.route('/:id')
-.get(validate(paramValidation.product.getPage))
-.get(productController.getAllProducts);
+  .get(validate(paramValidation.product.getById))
+  .get(productController.getByProdId);
 
 // create new instance and return id and name
 router.route('/')
-.post(validate(paramValidation.product.create))
-.post(productController.postProduct);
+  .post(validate(paramValidation.product.create))
+  .post(productController.postProduct);
 
 // update instance
 router.route('/:id')
-.put(validate(paramValidation.product.update))
-.put(productController.putProduct);
+  .put(validate(paramValidation.product.update))
+  .put(productController.putProduct);
 
 // delete instance
 router.route('/:id')
-.delete(validate(paramValidation.product.delete))
-.delete(productController.deleteProdutc);
+  .delete(validate(paramValidation.product.delete))
+  .delete(productController.deleteProduct);
 
 module.exports = router;

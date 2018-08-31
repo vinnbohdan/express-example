@@ -3,6 +3,12 @@ const models = require('../models');
 function getAllCategories(req, res) {
   models.Category.findAll({
     attributes: ['id', 'name'],
+    include: [
+      {
+        model: models.Subcategory,
+        attributes: ['id', 'name'],
+      },
+    ],
   })
   .then((categories) => {
     res.status(200).json(categories);

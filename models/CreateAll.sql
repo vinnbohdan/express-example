@@ -34,16 +34,16 @@ INSERT INTO test.Subcategories (CategoryId, name, createdBy, createdAt, updatedA
 INSERT INTO test.Subcategories (CategoryId, name, createdBy, createdAt, updatedAt) VALUES (5, 'Lenses', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Subcategories (CategoryId, name, createdBy, createdAt, updatedAt) VALUES (5, 'Filtres', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Subcategories (CategoryId, name, createdBy, createdAt, updatedAt) VALUES (5, 'Accessories', 1, '1996-07-04', '1996-07-04');
-INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (1, 1, 'Asus Vivo AiO V221ICGK-WA005D', 10, 14000, 'in stock', 1, '1996-07-04', '1996-07-04');
+INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, hotprice, createdBy, createdAt, updatedAt)
+VALUES (1, 1, 'Asus Vivo AiO V221ICGK-WA005D', 10, 14000, 'in stock', true, 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (1, 1, 'Asus AiO V161GAT-BD002D', 3, 16000, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (1, 1, 'Dell OptiPlex 3050 MFF', 0, 10000, 'product on the road', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (1, 1, 'Dell Vostro 3668', 7, 21000, 'in stock', 1, '1996-07-04', '1996-07-04');
-INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (1, 1, 'HP 260 G2 DM', 11, 9000, 'in stock', 1, '1996-07-04', '1996-07-04');
+INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, hotprice, createdBy, createdAt, updatedAt)
+VALUES (1, 1, 'HP 260 G2 DM', 11, 9000, 'in stock', true, 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (1, 2, 'HP Omen 17', 2, 22000, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
@@ -54,24 +54,24 @@ INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, stat
 VALUES (1, 2, 'ASUS ROG FX503VD Black', 24, 20000, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (1, 2, 'HP Pavilion Power 15-cb028nl', 0, 22000, 'not available', 1, '1996-07-04', '1996-07-04');
-INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (1, 3, 'Vinga WR-AC1200-LR', 30, 700, 'in stock', 1, '1996-07-04', '1996-07-04');
+INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, hotprice, createdBy, createdAt, updatedAt)
+VALUES (1, 3, 'Vinga WR-AC1200-LR', 30, 700, 'in stock', true, 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (1, 3, 'TP-Link TL-WR841N', 10, 500, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (1, 3, 'Mikrotik hAP ac2', 6, 2000, 'in stock', 1, '1996-07-04', '1996-07-04');
-INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (1, 4, 'Windows 7 pro', 70, 700, 'in stock', 1, '1996-07-04', '1996-07-04');
-INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (1, 4, 'Windows 8.1', 100, 500, 'in stock', 1, '1996-07-04', '1996-07-04');
+INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, hotprice, createdBy, createdAt, updatedAt)
+VALUES (1, 4, 'Windows 7 pro', 70, 700, 'in stock', true, 1, '1996-07-04', '1996-07-04');
+INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, hotprice, createdBy, createdAt, updatedAt)
+VALUES (1, 4, 'Windows 8.1', 100, 500, 'in stock', true, 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (1, 4, 'Adobe Photoshop CS', 46, 200, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (1, 5, 'Battery 19V', 6, 2000, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (1, 5, 'Bag 17', 70, 700, 'in stock', 1, '1996-07-04', '1996-07-04');
-INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (1, 5, 'Keyboard 154K99', 100, 500, 'in stock', 1, '1996-07-04', '1996-07-04');
+INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, hotprice, createdBy, createdAt, updatedAt)
+VALUES (1, 5, 'Keyboard 154K99', 100, 500, 'in stock', true, 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (1, 5, 'Toner 343hjj25664TR', 46, 20, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
@@ -84,8 +84,8 @@ INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, stat
 VALUES (2, 6, 'Samsung 32KKJHSBw3', 7, 21000, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (2, 6, 'LG 42H66sH', 11, 9000, 'in stock', 1, '1996-07-04', '1996-07-04');
-INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (2, 7, 'World Vision T62N', 12, 1200, 'in stock', 1, '1996-07-04', '1996-07-04');
+INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, hotprice, createdBy, createdAt, updatedAt)
+VALUES (2, 7, 'World Vision T62N', 12, 1200, 'in stock', true, 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (2, 7, 'Romsat T8020HD', 15, 2000, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
@@ -94,8 +94,8 @@ INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, stat
 VALUES (2, 7, 'ASUS ROG FX503VD Black', 24, 1100, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (2, 7, 'Galaxy Innovations Gi HD Slim 2', 10, 1500, 'not available', 1, '1996-07-04', '1996-07-04');
-INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (2, 8, 'SVEN MS-1820', 3, 1200, 'in stock', 1, '1996-07-04', '1996-07-04');
+INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, hotprice, createdBy, createdAt, updatedAt)
+VALUES (2, 8, 'SVEN MS-1820', 3, 1200, 'in stock', true, 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (2, 8, 'Edifier R2700', 10, 2500, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
@@ -104,8 +104,8 @@ INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, stat
 VALUES (2, 9, 'Sony TDG-BT500A', 10, 700, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (2, 9, 'Epson ELPGS03', 10, 500, 'in stock', 1, '1996-07-04', '1996-07-04');
-INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (3, 10, 'Pioneer DVR700PI Max', 11, 3200, 'in stock', 1, '1996-07-04', '1996-07-04');
+INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, hotprice, createdBy, createdAt, updatedAt)
+VALUES (3, 10, 'Pioneer DVR700PI Max', 11, 3200, 'in stock', true, 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (3, 10, 'NAVITEL T700 3G', 14, 1200, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
@@ -120,8 +120,8 @@ INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, stat
 VALUES (3, 14, 'Car Rear View System', 10, 700, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (3, 14, 'Viofo A119 V2', 10, 500, 'in stock', 1, '1996-07-04', '1996-07-04');
-INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (4, 15, 'Nokia 3310 (2017) Dual Sim Yellow', 11, 1000, 'in stock', 1, '1996-07-04', '1996-07-04');
+INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, hotprice, createdBy, createdAt, updatedAt)
+VALUES (4, 15, 'Nokia 3310 (2017) Dual Sim Yellow', 11, 1000, 'in stock', true, 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (4, 15, 'Nokia 216 Dual Sim Grey', 14, 1200, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
@@ -142,10 +142,10 @@ INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, stat
 VALUES (5, 18, 'Fujifilm X100T Mirrorless Camera', 11, 21000, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (5, 18, 'Canon EOS 70D', 14, 31200, 'in stock', 1, '1996-07-04', '1996-07-04');
+INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, hotprice, createdBy, createdAt, updatedAt)
+VALUES (5, 19, 'Yongnuo YN35mm EF', 10, 5000, 'in stock', true, 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (5, 19, 'Yongnuo YN35mm EF', 10, 5000, 'not available', 1, '1996-07-04', '1996-07-04');
-INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
-VALUES (5, 19, '7artisans 7.5mm', 3, 1200, 'in stock', 1, '1996-07-04', '1996-07-04');
+VALUES (5, 19, '7artisans 7.5mm', 3, 1200, 'not available', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
 VALUES (5, 20, 'FOTGA 58mm Slim', 210, 800, 'in stock', 1, '1996-07-04', '1996-07-04');
 INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, createdBy, createdAt, updatedAt)
