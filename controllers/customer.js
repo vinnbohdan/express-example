@@ -3,12 +3,12 @@ const models = require('../models');   /* eslint linebreak-style: ["error", "win
 function GetCustomers(req, res) {
   const limit = 2;   // number of records per page
   const page = parseInt(req.query.page, 10) || 1;      // page number
-  let offset = limit * (page - 1);
+  const offset = limit * (page - 1);
 
   models.Customer.findAndCountAll({
     attributes: ['first_name', 'last_name', 'email'],
-    limit: limit,
-    offset: offset,
+    limit,
+    offset,
   }).then((customers) => {
     res.set('x-total-count', customers.count);
     res.status(200).json(customers.rows);
@@ -18,7 +18,7 @@ function GetCustomers(req, res) {
 function CreateCustomer(req, res) {
   models.Customer
   .create(req.body).then((customer) => {
-    res.status(201).json({ id: customer.get('id'), firstName: customer.get('first_name'), lastName: customer.get('last_name') });
+    res.status(201).json({ id: customer.get('id')});
   });
 }
 

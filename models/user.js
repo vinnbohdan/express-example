@@ -1,11 +1,10 @@
-
+/* eslint linebreak-style: ["error", "windows"] */
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
     username: DataTypes.STRING,
   });
 
-  /* eslint func-names: ["error", "never"] */
-  User.associate = function (models) {
+  User.associate = (models) => {
     models.User.hasMany(models.Task);
   };
 

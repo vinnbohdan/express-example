@@ -1,10 +1,13 @@
+ /* eslint linebreak-style: ["error", "windows"] */
 module.exports = {
   development: {
     db: {
       host: 'localhost',
-      name: 'test',
+      name: process.env.DB_NAME || 'test',
       user: 'root',
       password: '',
+      // jwtSecret: '',
+      // jwtExpiresIn: 24 * 60 * 60,
     },
   },
   test: {

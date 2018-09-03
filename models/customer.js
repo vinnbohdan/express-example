@@ -2,28 +2,30 @@ module.exports = (sequelize, DataTypes) => {
   const Customer = sequelize.define('Customer', {
     role: {
       type: DataTypes.STRING,
-      defaultValue: 'user',
+      defaultValue: 'admin',
     },
     first_name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
+      defaultValue: 'admin',
     },
     last_name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
+      defaultValue: 'admin',
     },
     email: {
       type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
+      allowNull: true,
+  //    unique: true,
     },
     password: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     phone: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     country: {
       type: DataTypes.STRING,
@@ -44,7 +46,7 @@ module.exports = (sequelize, DataTypes) => {
     icon: {
       type: DataTypes.STRING,
       allowNull: true,
-      validate: { isUrl: true },
+//      validate: { isUrl: true },
     },
     removedAt: {
       type: DataTypes.DATE,
@@ -52,11 +54,11 @@ module.exports = (sequelize, DataTypes) => {
     },
     createdBy: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     editedBy: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   });
 

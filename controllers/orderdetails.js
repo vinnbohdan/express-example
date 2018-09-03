@@ -11,7 +11,7 @@ function GetOrderDetails(req, res) {
 function CreateOrderDetails(req, res) {
   models.OrderDetail
   .create(req.body).then((orderDetails) => {
-    res.status(201).json({ id: orderDetails.get('id'), date: orderDetails.get('quantity'), price: orderDetails.get('price') });
+    res.status(201).json({ id: orderDetails.get('id')});
   });
 }
 

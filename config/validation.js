@@ -172,18 +172,16 @@ const customerValidation = {
   },
   create: {
     body: {
-      first_name: Joi.string().alphanum().min(4).max(30)
-      .required(),
-      last_name: Joi.string().alphanum().min(4).max(30)
-      .required(),
-      email: Joi.string().email().required(),
-      password: Joi.string().regex(/^[a-zA-Z0-9]{3,30}$/).required(),
+      first_name: Joi.string().alphanum().min(4).max(30),
+      last_name: Joi.string().alphanum().min(4).max(30),
+      email: Joi.string().email(),
+      password: Joi.string().regex(/^[a-zA-Z0-9]{6,30}$/),
       // phone is required
       // and must be a string of the format XXX-XXX-XXXX
       // where X is a digit (0-9)
-      phone: Joi.string().regex(/^\d{3}-\d{3}-\d{4}$/).required(),
-      createdBy: Joi.number().required(),
-      editedBy: Joi.number().required(),
+      phone: Joi.string().regex(/^\d{3}-\d{3}-\d{4}$/),
+      createdBy: Joi.number(),
+      editedBy: Joi.number(),
     },
     options: {
       allowUnknownBody: false,

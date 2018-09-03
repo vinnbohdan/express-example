@@ -11,9 +11,7 @@ function GetOrders(req, res) {
 function CreateOrders(req, res) {
   models.Order
   .create(req.body).then((order) => {
-    res.status(201).json({ id: order.get('id'),
-      date: order.get('date'),
-      track_number: order.get('track_number') });
+    res.status(201).json({ id: order.get('id')});
   });
 }
 
