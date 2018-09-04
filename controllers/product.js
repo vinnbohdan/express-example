@@ -23,6 +23,9 @@ function getProducts(req, res) {
       offset: (page - 1) * config.productPageLimit,
       limit: config.productPageLimit,
       where: {
+        name: {
+          $like: `${search}%`,
+        },
         // [Op.or]: [
         //   {
         //     name: {
