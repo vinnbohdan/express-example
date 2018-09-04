@@ -6,6 +6,7 @@ module.exports = {
       query: {
         hot: Joi.boolean(),
         page: Joi.number().integer().min(1),
+        search: Joi.string().optional(),
       },
       options: {
         allowUnknownBody: false,
