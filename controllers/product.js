@@ -5,16 +5,16 @@ const config = require(`${__dirname}/../config/config.js`)[env];
 
 function getProducts(req, res) {
   const page = req.query.page || 1;
-  const hot = req.query.hot || false;
+  const isHot = req.query.isHot || false;
   const search = req.query.search || '';
   let conditions;
-  if (hot) {
+  if (isHot) {
     conditions = {
       attributes: ['id', 'name', 'cost'],
       offset: (page - 1) * config.productPageLimit,
       limit: config.productPageLimit,
       where: {
-        hotPrice: hot,
+        isHotprice: isHot,
       },
     };
   } else if (search) {
@@ -26,18 +26,6 @@ function getProducts(req, res) {
         name: {
           $like: `${search}%`,
         },
-        // [Op.or]: [
-        //   {
-        //     name: {
-        //       [Op.like]: `${search}%`,
-        //     },
-        //   },
-        //   {
-        //     name: {
-        //       [Op.like]: `${search}%`,
-        //     },
-        //   },
-        // ],
       },
     };
   } else {

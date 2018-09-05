@@ -4,7 +4,7 @@ module.exports = {
   product: {
     getPage: {
       query: {
-        hot: Joi.boolean(),
+        isHot: Joi.boolean(),
         page: Joi.number().integer().min(1),
         search: Joi.string().optional(),
       },

@@ -16,6 +16,10 @@ module.exports = (sequelize, DataTypes) => {
       validate: { isNumeric: true },
       allowNull: false,
     },
+    description: {
+      type: DataTypes.TEXT,
+      allowNull: true,
+    },
     status: {
       type: DataTypes.ENUM('product on the road', 'not available', 'product end', 'discontinued', 'in stock'), // eslint-disable-line new-cap
       allowNull: false,
@@ -24,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       validate: { isUrl: true },
     },
-    hotprice: {
+    isHotprice: {
       type: DataTypes.BOOLEAN,
     },
     removedAt: {
