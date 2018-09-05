@@ -82,6 +82,9 @@ module.exports = {
   },
   category: {
     getAll: {
+      query: {
+        page: Joi.number().integer().min(1),
+      },
       options: {
         allowUnknownBody: false,
         allowUnknownHeaders: false,
@@ -134,6 +137,9 @@ module.exports = {
   },
   subcategory: {
     getAll: {
+      query: {
+        page: Joi.number().integer().min(1),
+      },
       options: {
         allowUnknownBody: false,
         allowUnknownHeaders: false,
@@ -142,8 +148,11 @@ module.exports = {
       },
     },
     getByCategId: {
+      query: {
+        page: Joi.number().integer().min(1),
+      },
       params: {
-        id: Joi.number().integer().min(1).required(),
+        id: Joi.number().integer().min(1),
       },
       options: {
         allowUnknownBody: false,

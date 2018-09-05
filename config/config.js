@@ -8,7 +8,7 @@ module.exports = {
       // jwtSecret: 'secret_word',
       // jwtExpiresIn: 24 * 60 * 60,
     },
-    productPageLimit: 20,
+    pageLimit: 20,
   },
   test: {
     db: {

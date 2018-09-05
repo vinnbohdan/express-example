@@ -11,8 +11,8 @@ function getProducts(req, res) {
   if (isHot) {
     conditions = {
       attributes: ['id', 'name', 'cost'],
-      offset: (page - 1) * config.productPageLimit,
-      limit: config.productPageLimit,
+      offset: (page - 1) * config.pageLimit,
+      limit: config.pageLimit,
       where: {
         isHotprice: isHot,
       },
@@ -20,8 +20,8 @@ function getProducts(req, res) {
   } else if (search) {
     conditions = {
       attributes: ['id', 'name', 'cost'],
-      offset: (page - 1) * config.productPageLimit,
-      limit: config.productPageLimit,
+      offset: (page - 1) * config.pageLimit,
+      limit: config.pageLimit,
       where: {
         name: {
           $like: `${search}%`,
@@ -31,8 +31,8 @@ function getProducts(req, res) {
   } else {
     conditions = {
       attributes: ['id', 'name', 'cost'],
-      offset: (page - 1) * config.productPageLimit,
-      limit: config.productPageLimit,
+      offset: (page - 1) * config.pageLimit,
+      limit: config.pageLimit,
     };
   }
   models.Product.findAndCountAll(conditions)
@@ -46,8 +46,8 @@ function getByProdId(req, res) {
   const page = req.query.page || 1;
   models.Product.findAndCountAll({
     attributes: ['id', 'name', 'quantity', 'cost'],
-    offset: (page - 1) * config.productPageLimit,
-    limit: config.productPageLimit,
+    offset: (page - 1) * config.pageLimit,
+    limit: config.pageLimit,
     where: {
       SubcategoryId: req.params.id,
     },

@@ -1,23 +1,34 @@
 const models = require('../models');
 
+const env = process.env.NODE_ENV || 'development';
+const config = require(`${__dirname}/../config/config.js`)[env];
+
 function getAllSubcategories(req, res) {
-  models.Subcategory.findAll({
+  const page = req.query.page || 1;
+  models.Subcategory.findAndCountAll({
     attributes: ['id', 'name'],
+    offset: (page - 1) * config.pageLimit,
+    limit: config.pageLimit,
   })
   .then((subcategories) => {
-    res.status(200).json(subcategories);
+    res.set('x-total-count', subcategories.count);
+    res.status(200).json(subcategories.rows);
   });
 }
 
 function getSubcategories(req, res) {
-  models.Subcategory.findAll({
+  const page = req.query.page || 1;
+  models.Subcategory.findAndCountAll({
     attributes: ['id', 'name'],
+    offset: (page - 1) * config.pageLimit,
+    limit: config.pageLimit,
     where: {
       CategoryId: req.params.id,
     },
   })
   .then((subcategories) => {
-    res.status(200).json(subcategories);
+    res.set('x-total-count', subcategories.count);
+    res.status(200).json(subcategories.rows);
   });
 }
 

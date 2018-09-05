@@ -1,8 +1,14 @@
 const models = require('../models');
 
+const env = process.env.NODE_ENV || 'development';
+const config = require(`${__dirname}/../config/config.js`)[env];
+
 function getAllCategories(req, res) {
-  models.Category.findAll({
+  const page = req.query.page || 1;
+  models.Category.findAndCountAll({
     attributes: ['id', 'name'],
+    offset: (page - 1) * config.pageLimit,
+    limit: config.pageLimit,
     include: [
       {
         model: models.Subcategory,
@@ -11,7 +17,8 @@ function getAllCategories(req, res) {
     ],
   })
   .then((categories) => {
-    res.status(200).json(categories);
+    res.set('x-total-count', categories.count);
+    res.status(200).json(categories.rows);
   });
 }
 
