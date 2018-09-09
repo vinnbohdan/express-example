@@ -28,5 +28,6 @@ module.exports = {
       // jwtSecret: process.env.SECRET,
       // jwtExpiresIn: process.env.EXPIRES,
     },
+    pageLimit: process.env.PAGE_LIMIT,
   },
 };
