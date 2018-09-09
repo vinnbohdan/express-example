@@ -15,8 +15,7 @@ function getAllSubcategories(req, res) {
     res.status(200).json(subcategories.rows);
   });
 }
-
-function getSubcategories(req, res) {
+function getByCategoryId(req, res) {
   const page = req.query.page || 1;
   models.Subcategory.findAndCountAll({
     attributes: ['id', 'name'],
@@ -62,7 +61,7 @@ function deleteSubcategory(req, res) {
 
 module.exports = {
   getAllSubcategories,
-  getSubcategories,
+  getByCategoryId,
   postSubcategory,
   putSubcategory,
   deleteSubcategory,

@@ -2,11 +2,11 @@ const Joi = require('joi');
 
 module.exports = {
   product: {
-    getPage: {
+    getProducts: {
       query: {
         isHot: Joi.boolean(),
         page: Joi.number().integer().min(1),
-        search: Joi.string().optional(),
+        search: Joi.string().allow('').optional(),
       },
       options: {
         allowUnknownBody: false,
@@ -16,6 +16,17 @@ module.exports = {
       },
     },
     getById: {
+      params: {
+        id: Joi.number().integer().min(1),
+      },
+      options: {
+        allowUnknownBody: false,
+        allowUnknownHeaders: false,
+        allowUnknownQuery: false,
+        allowUnknownParams: false,
+      },
+    },
+    getBySubcategoryId: {
       query: {
         page: Joi.number().integer().min(1),
       },
@@ -81,7 +92,7 @@ module.exports = {
     },
   },
   category: {
-    getAll: {
+    getAllCategories: {
       query: {
         page: Joi.number().integer().min(1),
       },
@@ -136,7 +147,7 @@ module.exports = {
     },
   },
   subcategory: {
-    getAll: {
+    getAllSubcategories: {
       query: {
         page: Joi.number().integer().min(1),
       },
@@ -147,7 +158,7 @@ module.exports = {
         allowUnknownParams: false,
       },
     },
-    getByCategId: {
+    getByCategoryId: {
       query: {
         page: Joi.number().integer().min(1),
       },
@@ -197,6 +208,22 @@ module.exports = {
     delete: {
       params: {
         id: Joi.number().min(1).required(),
+      },
+      options: {
+        allowUnknownBody: false,
+        allowUnknownHeaders: false,
+        allowUnknownQuery: false,
+        allowUnknownParams: false,
+      },
+    },
+  },
+  specification: {
+    getByCategoryId: {
+      query: {
+        page: Joi.number().integer().min(1),
+      },
+      params: {
+        id: Joi.number().integer().min(1),
       },
       options: {
         allowUnknownBody: false,

@@ -7,12 +7,12 @@ const router = express.Router(); // eslint-disable-line new-cap
 
 // return list of products
 router.route('/')
-  .get(validate(paramValidation.product.getPage))
+  .get(validate(paramValidation.product.getProducts))
   .get(productController.getProducts);
 
 router.route('/:id')
   .get(validate(paramValidation.product.getById))
-  .get(productController.getByProdId);
+  .get(productController.getById);
 
 // create new instance and return id and name
 router.route('/')

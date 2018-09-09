@@ -7,7 +7,7 @@ const router = express.Router(); // eslint-disable-line new-cap
 
 // return list of categories
 router.route('/')
-.get(validate(paramValidation.category.getAll))
+.get(validate(paramValidation.category.getAllCategories))
 .get(categoryController.getAllCategories);
 
 // create new instance and return id

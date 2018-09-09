@@ -6,7 +6,12 @@ const config = require(`${__dirname}/../config/config.js`)[env];
 function getProducts(req, res) {
   const page = req.query.page || 1;
   const isHot = req.query.isHot || false;
-  const search = req.query.search || '';
+  if (req.query.search === '') {
+    res.status(204).end();
+    return;
+  }
+  const search = req.query.search;
+
   let conditions;
   if (isHot) {
     conditions = {
@@ -42,7 +47,28 @@ function getProducts(req, res) {
     });
 }
 
-function getByProdId(req, res) {
+function getById(req, res) {
+  models.Product.findAll({
+    attributes: ['id', 'name', 'description', 'quantity', 'status', 'cost'],
+    where: {
+      id: req.params.id,
+    },
+    include: [
+      {
+        model: models.Subcategory,
+        attributes: ['id', 'name'],
+      },
+      {
+        model: models.Category,
+        attributes: ['id', 'name'],
+      },
+    ],
+  }).then((product) => {
+    res.status(200).json(product);
+  });
+}
+
+function getBySubcategoryId(req, res) {
   const page = req.query.page || 1;
   models.Product.findAndCountAll({
     attributes: ['id', 'name', 'quantity', 'cost'],
@@ -87,7 +113,8 @@ function deleteProduct(req, res) {
 
 module.exports = {
   getProducts,
-  getByProdId,
+  getById,
+  getBySubcategoryId,
   postProduct,
   putProduct,
   deleteProduct,

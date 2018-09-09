@@ -2,17 +2,22 @@ const express = require('express');
 const validate = require('express-validation');
 const paramValidation = require('../config/paramValidation');
 const subcategoryController = require('../controllers/subcategory');
+const productController = require('../controllers/product');
 
 const router = express.Router(); // eslint-disable-line new-cap
 
 // return list of subcategories
 router.route('/')
-.get(validate(paramValidation.subcategory.getAll))
+.get(validate(paramValidation.subcategory.getAllSubcategories))
 .get(subcategoryController.getAllSubcategories);
 
 router.route('/:id')
-.get(validate(paramValidation.subcategory.getByCategId))
-.get(subcategoryController.getSubcategories);
+.get(validate(paramValidation.subcategory.getByCategoryId))
+.get(subcategoryController.getByCategoryId);
+
+router.route('/:id/products')
+  .get(validate(paramValidation.product.getBySubcategoryId))
+  .get(productController.getBySubcategoryId);
 
 // create new instance and return id
 router.route('/')
