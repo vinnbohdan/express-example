@@ -7,8 +7,8 @@ function getAllCategories(req, res) {
   const page = req.query.page || 1;
   models.Category.findAndCountAll({
     attributes: ['id', 'name'],
-    offset: (page - 1) * config.pageLimit,
-    limit: config.pageLimit,
+    offset: (page - 1) * parseInt(config.pageLimit, 10),
+    limit: parseInt(config.pageLimit, 10),
     include: [
       {
         model: models.Subcategory,

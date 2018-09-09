@@ -7,8 +7,8 @@ function getAllSubcategories(req, res) {
   const page = req.query.page || 1;
   models.Subcategory.findAndCountAll({
     attributes: ['id', 'name'],
-    offset: (page - 1) * config.pageLimit,
-    limit: config.pageLimit,
+    offset: (page - 1) * parseInt(config.pageLimit, 10),
+    limit: parseInt(config.pageLimit, 10),
   })
   .then((subcategories) => {
     res.set('x-total-count', subcategories.count);
@@ -19,8 +19,8 @@ function getByCategoryId(req, res) {
   const page = req.query.page || 1;
   models.Subcategory.findAndCountAll({
     attributes: ['id', 'name'],
-    offset: (page - 1) * config.pageLimit,
-    limit: config.pageLimit,
+    offset: (page - 1) * parseInt(config.pageLimit, 10),
+    limit: parseInt(config.pageLimit, 10),
     where: {
       CategoryId: req.params.id,
     },
