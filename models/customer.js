@@ -29,7 +29,6 @@ module.exports = (sequelize, DataTypes) => {
     phone: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: { isNumeric: true },
     },
     country: {
       type: DataTypes.STRING,

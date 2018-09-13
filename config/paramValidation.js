@@ -233,4 +233,26 @@ module.exports = {
       },
     },
   },
+  checkOut: {
+    postCheckOut: {
+      body: {
+        list: Joi.array().items(Joi.object()).required(),
+        first_name: Joi.string().alphanum().min(2).max(20).required(), // eslint-disable-line
+        last_name: Joi.string().alphanum().min(2).max(20).required(), // eslint-disable-line
+        email: Joi.string().email({ minDomainAtoms: 2 }).required(),
+        phone: Joi.number().precision(10).required(),
+        address: Joi.string().min(2).max(40).required(),
+        city: Joi.string().alphanum().min(2).max(20).required(), // eslint-disable-line
+        country: Joi.string().alphanum().min(2).max(20).required(), // eslint-disable-line
+        postcode: Joi.number().precision(10).required(),
+        cardNumber: Joi.number().precision(16).required(),
+      },
+      options: {
+        allowUnknownBody: false,
+        allowUnknownHeaders: false,
+        allowUnknownQuery: false,
+        allowUnknownParams: false,
+      },
+    },
+  },
 };
