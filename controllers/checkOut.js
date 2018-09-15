@@ -17,7 +17,6 @@ function postCheckOut(req, res) {
           city: req.body.city,
           postcode: req.body.postcode,
           address: req.body.address,
-          createdBy: 1,
         })
         .then((newcustomer) => {
           const result = { CustomerId: newcustomer.get('id') };

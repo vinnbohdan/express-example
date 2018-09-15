@@ -1,13 +1,13 @@
---INSERT INTO test.Customers (role, first_name, last_name, email, password, salt, phone, createdBy, createdAt, updatedAt)
---VALUES ('admin', 'White', 'Clover', 'aa@ua.ua', 'gX4TdfqKJAaHsm4or9KO0w', '2A3C75A40304C34FF75CDE07F169B05F', '555-11-11-11', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Customers (role, first_name, last_name, email, password, salt, phone, createdBy, createdAt, updatedAt)
---VALUES ('user', 'Balck', 'Mac', 'bb@ua.ua', 'gX4TdfqKJAaHsm4or9KO0w', '2A3C75A40304C34FF75CDE07F169B05F', '555-22-22-22', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Customers (role, first_name, last_name, email, password, salt, phone, createdBy, createdAt, updatedAt)
---VALUES ('user', 'Blue', 'Duck', 'cc@ua.ua', 'gX4TdfqKJAaHsm4or9KO0w', '2A3C75A40304C34FF75CDE07F169B05F', '555-33-33-33', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Customers (role, first_name, last_name, email, password, salt, phone, createdBy, createdAt, updatedAt)
---VALUES ('user', 'Green', 'Luck', 'dd@ua.ua', 'gX4TdfqKJAaHsm4or9KO0w', '2A3C75A40304C34FF75CDE07F169B05F', '555-44-44-44', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Customers (role, first_name, last_name, email, password, salt, phone, createdBy, createdAt, updatedAt)
---VALUES ('user', 'Grey', 'Maas', 'ee@ua.ua', 'gX4TdfqKJAaHsm4or9KO0w', '2A3C75A40304C34FF75CDE07F169B05F', '555-55-55-55', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Customers (role, first_name, last_name, email, password, salt, phone,  createdAt, updatedAt)
+--VALUES ('admin', 'White', 'Clover', 'aa@ua.ua', 'gX4TdfqKJAaHsm4or9KO0w', '2A3C75A40304C34FF75CDE07F169B05F', '555-11-11-11',  '1996-07-04', '1996-07-04');
+--INSERT INTO test.Customers (role, first_name, last_name, email, password, salt, phone,  createdAt, updatedAt)
+--VALUES ('user', 'Balck', 'Mac', 'bb@ua.ua', 'gX4TdfqKJAaHsm4or9KO0w', '2A3C75A40304C34FF75CDE07F169B05F', '555-22-22-22',  '1996-07-04', '1996-07-04');
+--INSERT INTO test.Customers (role, first_name, last_name, email, password, salt, phone,  createdAt, updatedAt)
+--VALUES ('user', 'Blue', 'Duck', 'cc@ua.ua', 'gX4TdfqKJAaHsm4or9KO0w', '2A3C75A40304C34FF75CDE07F169B05F', '555-33-33-33',  '1996-07-04', '1996-07-04');
+--INSERT INTO test.Customers (role, first_name, last_name, email, password, salt, phone,  createdAt, updatedAt)
+--VALUES ('user', 'Green', 'Luck', 'dd@ua.ua', 'gX4TdfqKJAaHsm4or9KO0w', '2A3C75A40304C34FF75CDE07F169B05F', '555-44-44-44',  '1996-07-04', '1996-07-04');
+--INSERT INTO test.Customers (role, first_name, last_name, email, password, salt, phone,  createdAt, updatedAt)
+--VALUES ('user', 'Grey', 'Maas', 'ee@ua.ua', 'gX4TdfqKJAaHsm4or9KO0w', '2A3C75A40304C34FF75CDE07F169B05F', '555-55-55-55',  '1996-07-04', '1996-07-04');
 --INSERT INTO test.Categories (name, createdBy, createdAt, updatedAt) VALUES ('Computers & Tablets', 1, '1996-07-04', '1996-07-04');
 --INSERT INTO test.Categories (name, createdBy, createdAt, updatedAt) VALUES ('TV & Audio', 1, '1996-07-04', '1996-07-04');
 --INSERT INTO test.Categories (name, createdBy, createdAt, updatedAt) VALUES ('Vehicle Electronics & GPS', 1, '1996-07-04', '1996-07-04');

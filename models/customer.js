@@ -55,10 +55,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DATE,
       allowNull: true,
     },
-    createdBy: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     editedBy: {
       type: DataTypes.INTEGER,
       allowNull: true,
