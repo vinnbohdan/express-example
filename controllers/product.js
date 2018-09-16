@@ -1,4 +1,5 @@
 const models = require('../models');
+const qs = require('qs');
 
 const env = process.env.NODE_ENV || 'development';
 const config = require(`${__dirname}/../config/config.js`)[env];
@@ -10,7 +11,11 @@ function getProducts(req, res) {
     res.status(204).end();
     return;
   }
+  if (typeof req.query.sort === 'undefined') {
+    req.query.sort = 'cost=ASC';
+  }
   const search = req.query.search;
+  const sort = qs.parse(req.query.sort);
 
   let whereConditional;
   if (isHot) {
@@ -31,6 +36,9 @@ function getProducts(req, res) {
     offset: (page - 1) * parseInt(config.pageLimit, 10),
     limit: parseInt(config.pageLimit, 10),
     where: whereConditional,
+    order: [
+      [Object.keys(sort)[0], Object.values(sort)[0]],
+    ],
   })
     .then((products) => {
       res.set('x-total-count', products.count);
@@ -61,6 +69,10 @@ function getById(req, res) {
 
 function getBySubcategoryId(req, res) {
   const page = req.query.page || 1;
+  if (typeof req.query.sort === 'undefined') {
+    req.query.sort = 'cost=ASC';
+  }
+  const sort = qs.parse(req.query.sort);
   models.Product.findAndCountAll({
     attributes: ['id', 'name', 'quantity', 'cost'],
     offset: (page - 1) * parseInt(config.pageLimit, 10),
@@ -68,6 +80,9 @@ function getBySubcategoryId(req, res) {
     where: {
       SubcategoryId: req.params.id,
     },
+    order: [
+      [Object.keys(sort)[0], Object.values(sort)[0]],
+    ],
   }).then((products) => {
     res.set('x-total-count', products.count);
     res.status(200).json(products.rows);

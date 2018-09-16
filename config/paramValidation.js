@@ -7,6 +7,7 @@ module.exports = {
         isHot: Joi.boolean(),
         page: Joi.number().integer().min(1),
         search: Joi.string().allow('').optional(),
+        sort: Joi.object().optional(),
       },
       options: {
         allowUnknownBody: false,
@@ -29,6 +30,7 @@ module.exports = {
     getBySubcategoryId: {
       query: {
         page: Joi.number().integer().min(1),
+        sort: Joi.object().optional(),
       },
       params: {
         id: Joi.number().integer().min(1),
@@ -258,6 +260,19 @@ module.exports = {
         country: Joi.string().alphanum().min(2).max(20).required(), // eslint-disable-line
         postcode: Joi.number().precision(10).required(),
         cardNumber: Joi.number().precision(16).required(),
+      },
+      options: {
+        allowUnknownBody: false,
+        allowUnknownHeaders: false,
+        allowUnknownQuery: false,
+        allowUnknownParams: false,
+      },
+    },
+  },
+  customer: {
+    getByCustomerEmail: {
+      query: {
+        email: Joi.string().email({ minDomainAtoms: 2 }).required(),
       },
       options: {
         allowUnknownBody: false,

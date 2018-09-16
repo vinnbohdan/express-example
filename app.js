@@ -106,8 +106,8 @@ app.use('/api/categories', categories);
 app.use('/api/subcategories', subcategories);
 app.use('/api/specifications', specifications);
 app.use('/api/checkouts', checkouts);
+app.use('/api/customers', customers);
 app.use('/orders', orders);
-app.use('/customers', customers);
 app.use('/orderdetails', orderDetails);
 
 // if error is not an instanceOf APIError, convert it.
