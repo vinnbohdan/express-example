@@ -218,6 +218,18 @@ module.exports = {
     },
   },
   specification: {
+    getSpecifiedProducts: {
+      query: {
+        page: Joi.number().integer().min(1),
+        filter: Joi.object().optional(),
+      },
+      options: {
+        allowUnknownBody: false,
+        allowUnknownHeaders: false,
+        allowUnknownQuery: false,
+        allowUnknownParams: false,
+      },
+    },
     getByCategoryId: {
       query: {
         page: Joi.number().integer().min(1),

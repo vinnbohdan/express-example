@@ -12,35 +12,26 @@ function getProducts(req, res) {
   }
   const search = req.query.search;
 
-  let conditions;
+  let whereConditional;
   if (isHot) {
-    conditions = {
-      attributes: ['id', 'name', 'cost'],
-      offset: (page - 1) * parseInt(config.pageLimit, 10),
-      limit: parseInt(config.pageLimit, 10),
-      where: {
-        isHotprice: isHot,
-      },
+    whereConditional = {
+      isHotprice: isHot,
     };
   } else if (search) {
-    conditions = {
-      attributes: ['id', 'name', 'cost'],
-      offset: (page - 1) * parseInt(config.pageLimit, 10),
-      limit: parseInt(config.pageLimit, 10),
-      where: {
-        name: {
-          $like: `${search}%`,
-        },
+    whereConditional = {
+      name: {
+        $like: `${search}%`,
       },
     };
   } else {
-    conditions = {
-      attributes: ['id', 'name', 'cost'],
-      offset: (page - 1) * parseInt(config.pageLimit, 10),
-      limit: parseInt(config.pageLimit, 10),
-    };
+    whereConditional = {};
   }
-  models.Product.findAndCountAll(conditions)
+  models.Product.findAndCountAll({
+    attributes: ['id', 'name', 'cost'],
+    offset: (page - 1) * parseInt(config.pageLimit, 10),
+    limit: parseInt(config.pageLimit, 10),
+    where: whereConditional,
+  })
     .then((products) => {
       res.set('x-total-count', products.count);
       res.status(200).json(products.rows);

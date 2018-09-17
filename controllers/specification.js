@@ -1,9 +1,38 @@
 const sequelize = require('sequelize');
+const qs = require('qs');
+const _ = require('lodash');
 const async = require('async');
 const models = require('../models');
 
-// const env = process.env.NODE_ENV || 'development';
-// const config = require(`${__dirname}/../config/config.js`)[env];
+const env = process.env.NODE_ENV || 'development';
+const config = require(`${__dirname}/../config/config.js`)[env];
+
+function getSpecifiedProducts(req, res) {
+  const page = req.query.page || 1;
+  const filter = qs.parse(req.query.filter) || {};
+  console.log(filter);
+  const result = [];
+  _.forEach(filter, (value, name) => {
+    result.push({ $and: [{ name }, { value: { $or: value } }] });
+  });
+  const whereObject = { $or: result };
+  console.log(whereObject);
+
+  models.Specification.findAndCountAll({
+    attributes: ['id'],
+    offset: (page - 1) * parseInt(config.pageLimit, 10),
+    limit: parseInt(config.pageLimit, 10),
+    where: whereObject,
+    include: {
+      model: models.Product,
+      attributes: ['id', 'name', 'cost'],
+    },
+  })
+    .then((products) => {
+      res.set('x-total-count', products.count);
+      res.status(200).json(products.rows);
+    });
+}
 
 function getBySubcategoryId(req, res) {
   const arrayObj = [];
@@ -33,11 +62,11 @@ function getBySubcategoryId(req, res) {
           callback();
         });
       }, () => {
-        // console.log(arrayObj);
         res.status(200).json(arrayObj);
       });
     });
 }
 module.exports = {
   getBySubcategoryId,
+  getSpecifiedProducts,
 };
