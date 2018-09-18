@@ -48,7 +48,7 @@ function getProducts(req, res) {
 
 function getById(req, res) {
   models.Product.findAll({
-    attributes: ['id', 'name', 'description', 'quantity', 'status', 'cost'],
+    attributes: ['id', 'name', 'description', 'icon', 'quantity', 'status', 'cost'],
     where: {
       id: req.params.id,
     },
