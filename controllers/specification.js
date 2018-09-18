@@ -8,18 +8,26 @@ const env = process.env.NODE_ENV || 'development';
 const config = require(`${__dirname}/../config/config.js`)[env];
 
 function getSpecifiedProducts(req, res) {
+  let whereObject = {};
   const page = req.query.page || 1;
   const filter = qs.parse(req.query.filter) || {};
   console.log(filter);
+  if (typeof req.query.sort === 'undefined') {
+    req.query.sort = 'cost=ASC';
+  }
+  const sort = qs.parse(req.query.sort);
   const result = [];
   _.forEach(filter, (value, name) => {
     result.push({ $and: [{ name }, { value: { $or: value } }] });
   });
-  const whereObject = { $or: result };
+  if (!_.isEmpty(result)) {
+    whereObject = { $or: result };
+  }
+  whereObject.SubcategoryId = req.params.id;
   console.log(whereObject);
 
   models.Specification.findAndCountAll({
-    attributes: ['id'],
+    attributes: ['Product.id'],
     offset: (page - 1) * parseInt(config.pageLimit, 10),
     limit: parseInt(config.pageLimit, 10),
     where: whereObject,
@@ -27,10 +35,14 @@ function getSpecifiedProducts(req, res) {
       model: models.Product,
       attributes: ['id', 'name', 'cost'],
     },
+    group: ['Specification.ProductId'],
+    order: [
+      [models.Product, Object.keys(sort)[0], Object.values(sort)[0]],
+    ],
   })
     .then((products) => {
       res.set('x-total-count', products.count);
-      res.status(200).json(products.rows);
+      res.status(200).json(_.map(products.rows, 'Product'));
     });
 }
 
@@ -48,6 +60,7 @@ function getBySubcategoryId(req, res) {
           attributes: [[sequelize.fn('DISTINCT', sequelize.col('value')), 'spec2']],
           where: {
             name: elem.dataValues.spec1,
+            SubcategoryId: req.params.id,
           },
         }).then((result) => {
           const arraySpec2 = [];

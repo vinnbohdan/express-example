@@ -224,6 +224,10 @@ module.exports = {
       query: {
         page: Joi.number().integer().min(1),
         filter: Joi.object().optional(),
+        sort: Joi.object().optional(),
+      },
+      params: {
+        id: Joi.number().integer().min(1),
       },
       options: {
         allowUnknownBody: false,

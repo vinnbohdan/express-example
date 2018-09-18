@@ -3,6 +3,7 @@ const validate = require('express-validation');
 const paramValidation = require('../config/paramValidation');
 const subcategoryController = require('../controllers/subcategory');
 const productController = require('../controllers/product');
+const specificationController = require('../controllers/specification');
 
 const router = express.Router(); // eslint-disable-line new-cap
 
@@ -18,6 +19,10 @@ router.route('/:id')
 router.route('/:id/products')
   .get(validate(paramValidation.product.getBySubcategoryId))
   .get(productController.getBySubcategoryId);
+
+router.route('/:id/specifications')
+  .get(validate(paramValidation.specification.getSpecifiedProducts))
+  .get(specificationController.getSpecifiedProducts);
 
 // create new instance and return id
 router.route('/')

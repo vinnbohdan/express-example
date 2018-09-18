@@ -166,3 +166,15 @@
 --INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (3, 1, 'Memory', '4096', 1, '1996-07-04', '1996-07-04');
 --INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (4, 1, 'Brand', 'Dell', 1, '1996-07-04', '1996-07-04');
 --INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (4, 1, 'Color', 'White', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (6, 2, 'Brand', 'HP', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (6, 2, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (6, 2, 'Memory', '4096', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (6, 2, 'Screen size', '14', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (7, 2, 'Brand', 'Lenovo', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (7, 2, 'Color', 'Red', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (7, 2, 'Memory', '3096', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (7, 2, 'Screen size', '15.1', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (8, 2, 'Brand', 'Xiaomi', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (8, 2, 'Memory', '4096', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (9, 2, 'Brand', 'Asus', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (9, 2, 'Color', 'White', 1, '1996-07-04', '1996-07-04');
