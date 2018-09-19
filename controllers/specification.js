@@ -33,7 +33,7 @@ function getSpecifiedProducts(req, res) {
     where: whereObject,
     include: {
       model: models.Product,
-      attributes: ['id', 'name', 'cost'],
+      attributes: ['id', 'name', 'cost', 'icon'],
     },
     group: ['Specification.ProductId'],
     order: [

@@ -32,7 +32,7 @@ function getProducts(req, res) {
     whereConditional = {};
   }
   models.Product.findAndCountAll({
-    attributes: ['id', 'name', 'cost'],
+    attributes: ['id', 'name', 'cost', 'icon'],
     offset: (page - 1) * parseInt(config.pageLimit, 10),
     limit: parseInt(config.pageLimit, 10),
     where: whereConditional,

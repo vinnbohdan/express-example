@@ -34,126 +34,126 @@
 --INSERT INTO test.Subcategories (CategoryId, name, createdBy, createdAt, updatedAt) VALUES (5, 'Lenses', 1, '1996-07-04', '1996-07-04');
 --INSERT INTO test.Subcategories (CategoryId, name, createdBy, createdAt, updatedAt) VALUES (5, 'Filtres', 1, '1996-07-04', '1996-07-04');
 --INSERT INTO test.Subcategories (CategoryId, name, createdBy, createdAt, updatedAt) VALUES (5, 'Accessories', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, isHotprice, createdBy, createdAt, updatedAt)
---VALUES (1, 1, 'Asus Vivo AiO V221ICGK-WA005D', 10, 14000, 'in stock', 'ASUS ROG G20AJ-B07 i5-4460 3.2GHz 1TB 8GB RAM gtx 750 With Asus 27 Monitor', true, 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 1, 'Asus AiO V161GAT-BD002D', 3, 16000, 'in stock', 'ASUS ROG G20AJ (1.032TB, Intel Core i7 4th Gen., 3.6GHz, 8GB) Gaming PC Win10', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 1, 'Dell OptiPlex 3050 MFF', 0, 10000, 'product on the road', 'Intel Xeon e3-1245v6 Quad Core 3.7 GHz Ram 8gb Hard Disk 1tb NVIDIA', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 1, 'Dell Vostro 3668', 7, 21000, 'in stock', 'un68u-m007z Mini Desktop PC (Intel Core i5-8250u, 8gb Ram spots, 256gb SSD', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, isHotprice, createdBy, createdAt, updatedAt)
---VALUES (1, 1, 'HP 260 G2 DM', 11, 9000, 'in stock', '90MS00X1-M00740 ROG GR8 II-T074Z 3.6GHz i7-7700 Black PC Intel Core', true, 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 2, 'HP Omen 17', 2, 22000, 'in stock', 'Ultra-thin Laptop PC 14.1 Netbook 1366*768 Display pixel 2GB+32GB Windows10', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 2, 'Lenovo IdeaPad 320-15', 15, 6000, 'in stock', 'NEW! LENOVO 15.6” Laptop Intel 2.40GHz 4GB 1TB DVD+RW WebCam HDMI USB Windows 10', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 2, 'Xiaomi Mi Notebook Pro', 1, 32000, 'in stock', 'Win10.1 15.6" FullHD Intel Core I7 6500U 8GB RAM +1TBROM 1920x1080 BT 4.0 Laptop', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 2, 'ASUS ROG FX503VD Black', 24, 20000, 'in stock', 'Win10.1 15.6" FullHD Intel Core I7 6500U 8GB RAM +1TBROM 1920x1080 BT 4.0 Laptop', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 2, 'HP Pavilion Power 15-cb028nl', 0, 22000, 'not available', 'Fast Laptop Computer i7 3.4Ghz 8gb Windows 10 Pro HD PC 8gb 320gb', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, isHotprice, createdBy, createdAt, updatedAt)
---VALUES (1, 3, 'Vinga WR-AC1200-LR', 30, 700, 'in stock', 'UGREEN V4.1 Wireless Bluetooth Receiver Audio Adapter with 3.5mm and 2 RCA Port', true, 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 3, 'TP-Link TL-WR841N', 10, 500, 'in stock', 'E5577C 150 Mbps 4G LTE et 3G Mobile 43,2 Mbps WiFi Hotspot Noir', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 3, 'Mikrotik hAP ac2', 6, 2000, 'in stock', 'Mikrotik hEX S RB760iGS Router 5xGbit LAN, 1xPOE, 1xSFP, 880Mhz CPU, USB', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, isHotprice, createdBy, createdAt, updatedAt)
---VALUES (1, 4, 'Windows 7 pro', 70, 700, 'in stock', 'Windows 7 license stickers home family 32/64bit new', true, 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, isHotprice, createdBy, createdAt, updatedAt)
---VALUES (1, 4, 'Windows 8.1', 100, 500, 'in stock', 'Dvd + license windows 8.1 pro professional 64bit french', true, 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 4, 'Adobe Photoshop CS', 46, 200, 'in stock', 'Adobe Photoshop CS Dvd + license', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 5, 'Battery 19V', 6, 2000, 'in stock', 'Genuine 65W 19V 3.42A AC Adapter Charger Power Supply Battery For Acer Aspire', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 5, 'Bag 17', 70, 700, 'in stock', '17" 17.3" Computer Laptop Backpack Knapsack Travel Bag for Lenovo IBM Dell ASUS', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, isHotprice, createdBy, createdAt, updatedAt)
---VALUES (1, 5, 'Keyboard 154K99', 100, 500, 'in stock', 'Slim Aluminium Wireless Bluetooth Keyboard For iPhone Computer PC C5R1', true, 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (1, 5, 'Toner 343hjj25664TR', 46, 20, 'in stock', 'XEROX SUPPLIES - 106R01161', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 6, 'Asus 32JHHS', 20, 14000, 'in stock', 'TV 32" Asus 32JHHS LED 6 Series 4k Ultra HD Smart Wifi 1500 PQI + Rack', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 6, 'LG 49IISKJ', 3, 16000, 'in stock', 'TV monitor LG 49IISKJ 49 inch 49" TV Used Digital Terrestrial Integrat', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 6, 'Samsung 50HHHHs', 0, 10000, 'product on the road', 'Samsung LED TV 50 inch Curved Ultra HD Smart 4k ue55mu6292 UHD dvb-t2 USB HDMI', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 6, 'Samsung 32KKJHSBw3', 7, 21000, 'in stock', 'TV 32" Samsung 32KKJHSBw3 LED 6 Series 4k Ultra HD Smart Wifi 800 PQI + Rack', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 6, 'LG 42H66sH', 11, 9000, 'in stock', 'LG 42" LED TV 42H66sH Ultra HD 4k Active HDR Smart TV TV Wi-Fi', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, isHotprice, createdBy, createdAt, updatedAt)
---VALUES (2, 7, 'World Vision T62N', 12, 1200, 'in stock', '8CH AHD HDMI 1080N DVR 1080P CCTV Outdoor Night Vision Security Camera System 2T', true, 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 7, 'Romsat T8020HD', 15, 2000, 'in stock', 'Romsat T8020HD Receiver SAT-CR supported', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 7, 'Strong SRT 8203', 1, 3200, 'in stock', 'Strong SRT 8203 Digital HD + SATELLITE RECEIVER DVBS 2 LIKE NEW', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 7, 'ASUS ROG FX503VD Black', 24, 1100, 'in stock', 'ASUS ROG FX503VD hd + satellite receiver fransat card for Eutelsat 5w/ab3', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 7, 'Galaxy Innovations Gi HD Slim 2', 10, 1500, 'not available', 'Galaxy Innovations Gi dvb-t2 HD (for tv freenet) with HEVC technology, HDMI,', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, isHotprice, createdBy, createdAt, updatedAt)
---VALUES (2, 8, 'SVEN MS-1820', 3, 1200, 'in stock', 'SVEN SPS-1820 computer stereo system speakers', true, 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 8, 'Edifier R2700', 10, 2500, 'in stock', 'Portable Waterproof Wireless Bluetooth Speaker With Handsfree Suction Cup C6 New', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 9, 'Panasonic TY-EW3D3ME', 26, 200, 'in stock', 'TV Speaker Home Theater Soundbar Bluetooth Wireless Sound Bar Speaker System', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 9, 'Sony TDG-BT500A', 10, 700, 'in stock', 'Soundbar TV Speaker Bluetooth Wireless Home Theater Sound Bar HiFi Subwoofer', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (2, 9, 'Epson ELPGS03', 10, 500, 'in stock', 'DC5V Bluetooth 4.0 Wireless TV Home Theater Sound Bar Speaker Soundbar', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, isHotprice, createdBy, createdAt, updatedAt)
---VALUES (3, 10, 'Pioneer DVR700PI Max', 11, 3200, 'in stock', '3.5" XGODY Car GPS Navigation Lorry Coach Truck  Nav 16GB POI Speedcam', true, 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (3, 10, 'NAVITEL T700 3G', 14, 1200, 'in stock', '7" XGODY Car GPS Navigation Lorry Coach Truck Navigator Nav 8GB POI Speedcam', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (3, 11, 'Taramps HD3000', 10, 1500, 'not available', 'Global Locator Mini A8 Real Time Car Kids GSM/GPRS/GPS Tracker Tracking Device P', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (3, 11, 'ALPINE DDT-S30 A', 3, 1200, 'in stock', 'Vehicle GSM GPRS GPS Tracker or Car Tracking Locator Device TK102B Black', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (3, 12, 'Car Trucker Speed V9', 10, 500, 'in stock', 'Mini GSM GPRS GPS Tracker Vehicle Car Pet Real Time Tracking Device Intriguing', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (3, 13, 'Night Vision 360Degree', 26, 200, 'in stock', 'Car GPS Navigation 7'' 8GB FM MP3+ Wired Reversing Camera Bluetooth Maps Updates', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (3, 14, 'Car Rear View System', 10, 700, 'in stock', '7" HD Touchscreen 1 DIN Car GPS Stereo MP5 Player Bluetooth Radio FM/USB/SD T6V8', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (3, 14, 'Viofo A119 V2', 10, 500, 'in stock', '3" 1 DIN Car Stereo Audio Radio Bluetooth DVD CD MP5 Player Detachable 4x60W', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, isHotprice, createdBy, createdAt, updatedAt)
---VALUES (4, 15, 'MOTOROLA RAZR V3', 11, 1000, 'in stock', 'MOTOROLA RAZR V3 GSM Camera Factory Unlock cell phone flip vintage V3. SM', true, 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (4, 15, 'Nokia 216 Dual Sim Grey', 14, 1200, 'in stock', 'New Nokia C Series C2-01 Black Gold Unlocked English Hebrew Keyboard Bar Phone', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (4, 15, 'Nokia 105 DS TA-1034 White', 10, 500, 'not available', 'Retro Camera Mobile Unlocked Dual NOKIA Cell Bluetooth 3310 SIM Phone 2017', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (4, 15, 'Alcatel OneTouch 2008G Black', 3, 1200, 'in stock', 'ALCATEL ONETOUCH Alcatel One Touch OT-710 - Black (Unlocked) Mobile Phone', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (4, 16, 'Huawei P Smart Black', 10, 8000, 'in stock', 'Huawei P9 Lite 16GB 2016 13MP 3GB RAM Unlocked Android 4G Smartphone 3 color', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (4, 16, 'Xiaomi Redmi Note 5', 26, 5000, 'in stock', 'Smartphone No Brand SM g950f 64 GB 4g Black Black NO s9 Italy', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (4, 16, 'Samsung Galaxy A5', 10, 8100, 'in stock', '5.99" Android 8.1 Snapdragon 660 20MP Dual Camera 4G Phone 4G+64GB', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (4, 17, 'Kingston microSDHC 16GB', 100, 150, 'in stock', '5" Android 7 Snapdragon 660 20MP Dual Camera 4G Phone 4G+16GB', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (5, 18, 'Canon Rebel T6 SLR', 10, 15000, 'in stock', 'New Canon Rebel T6 SLR Camera 2 lens Kit with 18-55& 75-300mm, bag, 16gb SD card', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (5, 18, 'Fujifilm X100T Mirrorless Camera', 11, 21000, 'in stock', '25mm f/1.8 Prime Lens Manual Focus MF Fr Fujifilm X FX XF Mount Camera XT1 X100T', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (5, 18, 'Canon EOS 70D', 14, 31200, 'in stock', 'Canon EOS 70D 20.2MP Digital SLR Camera - (Body Only) - FAULTY WONT TURN ON', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, isHotprice, createdBy, createdAt, updatedAt)
---VALUES (5, 19, 'Yongnuo YN35mm EF', 10, 5000, 'in stock', 'Yongnuo YN35mm EF 35mm F/2 Wide-angle Auto Focus Lens for Canon Rebel Camera EOS', true, 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (5, 19, '7artisans 7.5mm', 3, 1200, 'not available', '7artisans 7.5mm F2.8 Fisheye Lens 180º Angle for Sony Fuji Olympus Micro 4/3 Cam', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (5, 20, 'FOTGA 58mm Slim', 210, 800, 'in stock', 'FOTGA 58mm Slim Fader ND(W) Filter Variable Adjustable ND2 ND8 to ND400 Red Ring', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (5, 20, '52-82mm UV Ultra-Violet Filter', 26, 500, 'in stock', '52-82mm UV Ultra-Violet Filter Lens Protector For Camera Canon DSLR/SLR/DC/DV', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (5, 21, 'GoPro HERO 6', 10, 8100, 'in stock', 'GoPro HERO 6 Black Video-Capture Action Camera HD 4K On Sales Original Sealed', 1, '1996-07-04', '1996-07-04');
---INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, description, createdBy, createdAt, updatedAt)
---VALUES (5, 21, 'Campark Sport Action Cam', 10, 1250, 'in stock', 'Campark Sport Action Cam 4K WIFI 16MP Ultra HD Camera Dual Screen Telecomando EU', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, isHotprice, createdBy, createdAt, updatedAt)
+--VALUES (1, 1, 'Asus Vivo AiO V221ICGK-WA005D', 10, 14000, 'in stock', 'https://i.can.ua/goods/2242/2242921.jpg', 'ASUS ROG G20AJ-B07 i5-4460 3.2GHz 1TB 8GB RAM gtx 750 With Asus 27 Monitor', true, 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 1, 'Asus AiO V161GAT-BD002D', 3, 16000, 'in stock', 'https://i2.rozetka.ua/goods/2356868/copy_asus_90pt01v1_m04830_5a154e2404f75_images_2356868377._S.jpg', 'ASUS ROG G20AJ (1.032TB, Intel Core i7 4th Gen., 3.6GHz, 8GB) Gaming PC Win10', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 1, 'Dell OptiPlex 3050 MFF', 0, 10000, 'product on the road', 'http://www.expertscomputer.com/wp-content/uploads/2018/02/HP-290-G1-Microtower-PC-expertscomputer-dubai.......jpg', 'Intel Xeon e3-1245v6 Quad Core 3.7 GHz Ram 8gb Hard Disk 1tb NVIDIA', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 1, 'Dell Vostro 3668', 7, 21000, 'in stock', 'https://5.imimg.com/data5/GS/QD/MY-23332625/dell-vostro-3668-desktop-28ubuntu-linux-16-04-29-500x500.jpg', 'un68u-m007z Mini Desktop PC (Intel Core i5-8250u, 8gb Ram spots, 256gb SSD', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, isHotprice, createdBy, createdAt, updatedAt)
+--VALUES (1, 1, 'HP 260 G2 DM', 11, 9000, 'in stock', 'http://enter.biz.ua/pictures/195417/451794.jpg', '90MS00X1-M00740 ROG GR8 II-T074Z 3.6GHz i7-7700 Black PC Intel Core', true, 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 2, 'HP Omen 17', 2, 22000, 'in stock', 'https://c1.neweggimages.com/NeweggImage/ProductImage/34-267-822-S04.jpg', 'Ultra-thin Laptop PC 14.1 Netbook 1366*768 Display pixel 2GB+32GB Windows10', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 2, 'Lenovo IdeaPad 320-15', 15, 6000, 'in stock', 'https://laptoping.com/specs/wp-content/uploads/2017/11/Lenovo-IdeaPad-320-15ABR-80XS0024US-15.6-Laptop-AMD-A12-Series-CPU-8GB-RAM-1TB-HDD-Platinum-Gray.jpg', 'NEW! LENOVO 15.6” Laptop Intel 2.40GHz 4GB 1TB DVD+RW WebCam HDMI USB Windows 10', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 2, 'Xiaomi Mi Notebook Pro', 1, 32000, 'in stock', 'https://image2.geekbuying.com/ggo_pic/2018-06-14/201806140114231dxoe4fj.jpg', 'Win10.1 15.6" FullHD Intel Core I7 6500U 8GB RAM +1TBROM 1920x1080 BT 4.0 Laptop', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 2, 'ASUS ROG FX503VD Black', 24, 20000, 'in stock', 'https://mta.ua/image/cache/data/foto/91954/photos/FX503VD-01-500x500.jpg', 'Win10.1 15.6" FullHD Intel Core I7 6500U 8GB RAM +1TBROM 1920x1080 BT 4.0 Laptop', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 2, 'HP Pavilion Power 15-cb028nl', 0, 22000, 'not available', 'https://media.aws.alkosto.com/media/catalog/product/cache/3/image/8bf9d84cc5f65bd89f2d4160406987fb/1/9/191628154470_3.jpg', 'Fast Laptop Computer i7 3.4Ghz 8gb Windows 10 Pro HD PC 8gb 320gb', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, isHotprice, createdBy, createdAt, updatedAt)
+--VALUES (1, 3, 'Vinga WR-AC1200-LR', 30, 700, 'in stock', 'https://kupi.cn.ua/upload/shop/pos/172608/12b-marshrutizator-vinga-wr-ac1200-long-range-wr-ac1200-lr.jpg', 'UGREEN V4.1 Wireless Bluetooth Receiver Audio Adapter with 3.5mm and 2 RCA Port', true, 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 3, 'TP-Link TL-WR841N', 10, 500, 'in stock', 'https://static.tp-link.com/TL-WR841N(EU)14.0-288x202x86-L-7022505730_normal_1524475444511q.jpg', 'E5577C 150 Mbps 4G LTE et 3G Mobile 43,2 Mbps WiFi Hotspot Noir', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 3, 'Mikrotik hAP ac2', 6, 2000, 'in stock', 'https://avatars.mds.yandex.net/get-mpic/199079/img_id660223649821336908.jpeg/9hq', 'Mikrotik hEX S RB760iGS Router 5xGbit LAN, 1xPOE, 1xSFP, 880Mhz CPU, USB', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, isHotprice, createdBy, createdAt, updatedAt)
+--VALUES (1, 4, 'Windows 7 pro', 70, 700, 'in stock', 'https://www.tresbizz.com/media/product/6f4/windows-7-professional-sp1-32-64-bit-product-key-013.jpg', 'Windows 7 license stickers home family 32/64bit new', true, 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, isHotprice, createdBy, createdAt, updatedAt)
+--VALUES (1, 4, 'Windows 8.1', 100, 500, 'in stock', 'https://5.imimg.com/data5/WP/XC/MY-38470401/microsoft-windows-8-1-professional-500x500.jpg', 'Dvd + license windows 8.1 pro professional 64bit french', true, 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 4, 'Adobe Photoshop CS', 46, 200, 'in stock', 'https://images-na.ssl-images-amazon.com/images/I/51G31XWX1VL.jpg', 'Adobe Photoshop CS Dvd + license', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 5, 'Battery 19V', 6, 2000, 'in stock', 'https://ae01.alicdn.com/kf/HTB1YkVQdnJ_SKJjSZPiq6z3LpXaP/Genuine-Original-65W-19V-3-42A-Power-Supply-Adapter-Charger-For-ASUS-X55A-BCL092A-X55A-RBK2.jpg_640x640.jpg', 'Genuine 65W 19V 3.42A AC Adapter Charger Power Supply Battery For Acer Aspire', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 5, 'Bag 17', 70, 700, 'in stock', 'https://images-na.ssl-images-amazon.com/images/I/51UUHtuna7L._SX522_.jpg', '17" 17.3" Computer Laptop Backpack Knapsack Travel Bag for Lenovo IBM Dell ASUS', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, isHotprice, createdBy, createdAt, updatedAt)
+--VALUES (1, 5, 'Keyboard 154K99', 100, 500, 'in stock', 'https://www.picclickimg.com/d/l400/pict/381348648310_/Black-Keyboard-Wireless-Bluetooth-Keyboard-For-IOS-Android.jpg', 'Slim Aluminium Wireless Bluetooth Keyboard For iPhone Computer PC C5R1', true, 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (1, 5, 'Toner 343hjj25664TR', 46, 20, 'in stock', 'https://cdn.officestationery.co.uk/products/XR6R01161-500/Xerox-Magenta-Toner-Cartridge-High-Capacity-106R01.jpg', 'XEROX SUPPLIES - 106R01161', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 6, 'Asus 32JHHS', 20, 14000, 'in stock', 'https://www.asus.com/media/global/products/a6GsdpI0kcEgbAkq/P_setting_fff_1_90_end_500.png', 'TV 32" Asus 32JHHS LED 6 Series 4k Ultra HD Smart Wifi 1500 PQI + Rack', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 6, 'LG 49IISKJ', 3, 16000, 'in stock', 'https://cdn.azrieli.com/Images/06efedbb-aaeb-4ed9-b5a5-3c5dc0e2f118/Normal/fc9b57d2.jpg', 'TV monitor LG 49IISKJ 49 inch 49" TV Used Digital Terrestrial Integrat', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 6, 'Samsung 50HHHHs', 0, 10000, 'product on the road', 'https://5.imimg.com/data5/EQ/OS/MY-62136380/50-inch-samsung-led-tv-500x500.jpg', 'Samsung LED TV 50 inch Curved Ultra HD Smart 4k ue55mu6292 UHD dvb-t2 USB HDMI', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 6, 'Samsung 32KKJHSBw3', 7, 21000, 'in stock', 'http://i.digitaldirect.co.uk/product2/xl/samsung_ue_32es6710_ue32es6710.jpg', 'TV 32" Samsung 32KKJHSBw3 LED 6 Series 4k Ultra HD Smart Wifi 800 PQI + Rack', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 6, 'LG 42H66sH', 11, 9000, 'in stock', 'https://www.bhphotovideo.com/images/images500x500/lg_electronics_42ln5700_42_1080p_smart_led_965431.jpg', 'LG 42" LED TV 42H66sH Ultra HD 4k Active HDR Smart TV TV Wi-Fi', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, isHotprice, createdBy, createdAt, updatedAt)
+--VALUES (2, 7, 'World Vision T62N', 12, 1200, 'in stock', 'https://img01-olxua.akamaized.net/img-olxua/677505428_1_644x461_t2-t2-tv-tyuner-world-vision-t62n-analog-t62a-dnepropetrovsk.jpg', '8CH AHD HDMI 1080N DVR 1080P CCTV Outdoor Night Vision Security Camera System 2T', true, 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 7, 'Romsat T8020HD', 15, 2000, 'in stock', 'https://romsat.ua/upload/resize_cache/iblock/44c/902_601_154f2f52ac51d7e0d8efcdecfafd5b817/44c03bc9445295d10919ab4a480157da.jpg', 'Romsat T8020HD Receiver SAT-CR supported', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 7, 'Strong SRT 8203', 1, 3200, 'in stock', 'https://img01-olxua.akamaized.net/img-olxua/673666087_1_644x461_t2-resiver-strong-srt-8203-iptv-youtube-pogoda-rss-t2-tyuner-lvov_rev012.jpg', 'Strong SRT 8203 Digital HD + SATELLITE RECEIVER DVBS 2 LIKE NEW', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 7, 'ASUS ROG', 24, 1100, 'in stock', 'http://www.nobell.org/~gjm/pc/images/FusionHDTVII-detail.jpg', 'ASUS ROG FX503VD hd + satellite receiver fransat card for Eutelsat 5w/ab3', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 7, 'Galaxy Innovations Gi HD Slim 2', 10, 1500, 'not available', 'http://star-sat.com.ua/product_images/909-1467401964-0.jpg', 'Galaxy Innovations Gi dvb-t2 HD (for tv freenet) with HEVC technology, HDMI,', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, isHotprice, createdBy, createdAt, updatedAt)
+--VALUES (2, 8, 'SVEN MS-1820', 3, 1200, 'in stock', 'https://36.img.avito.st/640x480/4627171936.jpg', 'SVEN SPS-1820 computer stereo system speakers', true, 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 8, 'Edifier R2700', 10, 2500, 'in stock', 'https://images.kz.prom.st/72138584_w640_h640_cid584030_pid49393220-823dad88.jpg', 'Portable Waterproof Wireless Bluetooth Speaker With Handsfree Suction Cup C6 New', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 9, 'Panasonic TY-EW3D3ME', 26, 200, 'in stock', 'https://mcgrp.ru/images/1056218/1071843.jpg', 'TV Speaker Home Theater Soundbar Bluetooth Wireless Sound Bar Speaker System', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 9, 'Sony TDG-BT500A', 10, 700, 'in stock', 'https://ae01.alicdn.com/kf/HTB12Qj.KpXXXXXlXVXXq6xXFXXXK/Free-shipping-Genuine-TDG-BT500A-TDG-BT400A-Active-3D-Glasses-For-Sony-TV.jpg', 'Soundbar TV Speaker Bluetooth Wireless Home Theater Sound Bar HiFi Subwoofer', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (2, 9, 'Epson ELPGS03', 10, 500, 'in stock', 'https://c.76.my/Malaysia/epson-elpgs03-full-hd-rf-active-shutter-3d-glasses-unboxmy-1609-09-UNBOXMY@15.jpg', 'DC5V Bluetooth 4.0 Wireless TV Home Theater Sound Bar Speaker Soundbar', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, isHotprice, createdBy, createdAt, updatedAt)
+--VALUES (3, 10, 'Pioneer DVR700PI Max', 11, 3200, 'in stock', 'https://skylots.org/images/images/n/c9/91c9c6697e43bbd357a815790e3abdc8.jpg', '3.5" XGODY Car GPS Navigation Lorry Coach Truck  Nav 16GB POI Speedcam', true, 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (3, 10, 'NAVITEL T700 3G', 14, 1200, 'in stock', 'https://avatars.mds.yandex.net/get-mpic/466729/img_id5919004327183013739.jpeg/9hq', '7" XGODY Car GPS Navigation Lorry Coach Truck Navigator Nav 8GB POI Speedcam', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (3, 11, 'Taramps HD3000', 10, 1500, 'not available', 'https://i.ebayimg.com/images/g/O2sAAOSwM2RZh1ux/s-l640.jpg', 'Global Locator Mini A8 Real Time Car Kids GSM/GPRS/GPS Tracker Tracking Device P', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (3, 11, 'ALPINE DDT-S30 A', 3, 1200, 'in stock', 'https://images-na.ssl-images-amazon.com/images/I/51HvdBRzGUL._SX355_.jpg', 'Vehicle GSM GPRS GPS Tracker or Car Tracking Locator Device TK102B Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (3, 12, 'Car Trucker Speed V9', 10, 500, 'in stock', 'https://i5.walmartimages.com/asr/290522c5-5a52-474d-9f16-929289512221_1.b3b86b2087e9960a3206a848c53f207f.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF', 'Mini GSM GPRS GPS Tracker Vehicle Car Pet Real Time Tracking Device Intriguing', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (3, 13, 'Night Vision 360Degree', 26, 200, 'in stock', 'https://img.crazysales.com.au/products_pictures/126/126109_761129_F.jpg', 'Car GPS Navigation 7'' 8GB FM MP3+ Wired Reversing Camera Bluetooth Maps Updates', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (3, 14, 'Car Rear View System', 10, 700, 'in stock', 'https://images-na.ssl-images-amazon.com/images/I/51moOBhSVmL.jpg', '7" HD Touchscreen 1 DIN Car GPS Stereo MP5 Player Bluetooth Radio FM/USB/SD T6V8', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (3, 14, 'Viofo A119 V2', 10, 500, 'in stock', 'https://ae01.alicdn.com/kf/HTB1GMHHSpXXXXbjaFXXq6xXFXXX3/VIOFO-Upgrated-A119-V2-Car-DVR-2-0-screen-Capacitor-Car-Dash-Camera-60fps-GPS-Logger.jpg_640x640.jpg', '3" 1 DIN Car Stereo Audio Radio Bluetooth DVD CD MP5 Player Detachable 4x60W', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, isHotprice, createdBy, createdAt, updatedAt)
+--VALUES (4, 15, 'MOTOROLA RAZR V3', 11, 1000, 'in stock', 'https://avatars.mds.yandex.net/get-mpic/195452/img_id6417947363253466275/9hq', 'MOTOROLA RAZR V3 GSM Camera Factory Unlock cell phone flip vintage V3. SM', true, 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (4, 15, 'Nokia 216 Dual Sim Grey', 14, 1200, 'in stock', 'https://drop.ndtv.com/TECH/product_database/images/920201640454PM_635_nokia_216_dual_sim.jpeg', 'New Nokia C Series C2-01 Black Gold Unlocked English Hebrew Keyboard Bar Phone', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (4, 15, 'Nokia 105 DS TA-1034 White', 10, 500, 'not available', 'https://www.91-img.com/pictures/119025-v2-nokia-105-dual-sim-2017-mobile-phone-large-1.jpg', 'Retro Camera Mobile Unlocked Dual NOKIA Cell Bluetooth 3310 SIM Phone 2017', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (4, 15, 'Alcatel OneTouch 2008G Black', 3, 1200, 'in stock', 'https://static.quickmobileshop.com/cs-photos/products/original/ot-2008g-negru-argintiu_10021343_3_1483021651.jpg', 'ALCATEL ONETOUCH Alcatel One Touch OT-710 - Black (Unlocked) Mobile Phone', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (4, 16, 'Huawei P Smart Black', 10, 8000, 'in stock', 'https://www.webantics.com/content/images/thumbs/010/0109694_huawei-p-smart-32gb-565-smartphone-unlocked-black_600.jpeg', 'Huawei P9 Lite 16GB 2016 13MP 3GB RAM Unlocked Android 4G Smartphone 3 color', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (4, 16, 'Xiaomi Redmi Note 5', 26, 5000, 'in stock', 'https://i.allo.ua/media/catalog/product/cache/1/image/600x415/799896e5c6c37e11608b9f8e1d047d15/x/i/xiaomi_redmi_note_5_pro_9_1_1.jpg', 'Smartphone No Brand SM g950f 64 GB 4g Black Black NO s9 Italy', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (4, 16, 'Samsung Galaxy A5', 10, 8100, 'in stock', 'https://c.76.my/Malaysia/brand-samsung-samsung-galaxy-a5-a5108-infinitegadget-1610-27-infinitegadget@5.jpg', '5.99" Android 8.1 Snapdragon 660 20MP Dual Camera 4G Phone 4G+64GB', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (4, 17, 'Kingston microSDHC 16GB', 100, 150, 'in stock', 'https://yellow.ua/media/catalog/product/cache/8/image/650x650/9df78eab33525d08d6e5fb8d27136e95/m/a/ma16a.jpg', '5" Android 7 Snapdragon 660 20MP Dual Camera 4G Phone 4G+16GB', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (5, 18, 'Canon Rebel T6 SLR', 10, 15000, 'in stock', 'https://multimedia.bbycastatic.ca/multimedia/products/500x500/104/10416/10416668.jpg', 'New Canon Rebel T6 SLR Camera 2 lens Kit with 18-55& 75-300mm, bag, 16gb SD card', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (5, 18, 'Fujifilm X100T Mirrorless Camera', 11, 21000, 'in stock', 'https://www.cotswoldcameras.co.uk/ekmps/shops/cotswoldcameras/images/fujifilm-x100t-digital-camera-639-p.jpg', '25mm f/1.8 Prime Lens Manual Focus MF Fr Fujifilm X FX XF Mount Camera XT1 X100T', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (5, 18, 'Canon EOS 70D', 14, 31200, 'in stock', 'https://ae01.alicdn.com/kf/HTB1mZiCLpXXXXXwaFXXq6xXFXXXk/New-Original-Canon-EOS-70D-Digital-SLR-Camera-Body-EF-S-18-135mm-IS-STM-Lens.jpg', 'Canon EOS 70D 20.2MP Digital SLR Camera - (Body Only) - FAULTY WONT TURN ON', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, isHotprice, createdBy, createdAt, updatedAt)
+--VALUES (5, 19, 'Yongnuo YN35mm EF', 10, 5000, 'in stock', 'https://i2.wp.com/matzgear.com/wp/wp-content/uploads/2017/11/12-2-2.jpg?fit=500%2C500&ssl=1', 'Yongnuo YN35mm EF 35mm F/2 Wide-angle Auto Focus Lens for Canon Rebel Camera EOS', true, 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (5, 19, '7artisans 7.5mm', 3, 1200, 'not available', 'https://www.bhphotovideo.com/images/images750x750/7artisans_photoelectric_7a75f28fm43_7_5mm_f2_8_fisheye_aps_c_1387949.jpg', '7artisans 7.5mm F2.8 Fisheye Lens 180º Angle for Sony Fuji Olympus Micro 4/3 Cam', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (5, 20, 'FOTGA 58mm Slim', 210, 800, 'in stock', 'https://images-na.ssl-images-amazon.com/images/I/61Et6427OkL._SX425_.jpg', 'FOTGA 58mm Slim Fader ND(W) Filter Variable Adjustable ND2 ND8 to ND400 Red Ring', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (5, 20, '52-82mm UV Ultra-Violet Filter', 26, 500, 'in stock', 'https://images-na.ssl-images-amazon.com/images/I/51t0U0UpJTL._SY463_.jpg', '52-82mm UV Ultra-Violet Filter Lens Protector For Camera Canon DSLR/SLR/DC/DV', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (5, 21, 'GoPro HERO 6', 10, 8100, 'in stock', 'https://static.digitecgalaxus.ch/Files/9/0/8/1/9/9/9/GOPRO2.jpg?fit=inside%7C464:368&output-format=progressive-jpeg', 'GoPro HERO 6 Black Video-Capture Action Camera HD 4K On Sales Original Sealed', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Products (CategoryId, SubcategoryId, name, quantity, cost, status, icon, description, createdBy, createdAt, updatedAt)
+--VALUES (5, 21, 'Campark Sport Action Cam', 10, 1250, 'in stock', 'https://i.ebayimg.com/images/g/HQIAAOSwSfRbLbM1/s-l640.jpg', 'Campark Sport Action Cam 4K WIFI 16MP Ultra HD Camera Dual Screen Telecomando EU', 1, '1996-07-04', '1996-07-04');
 --INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (1, 1, 'Brand', 'Asus', 1, '1996-07-04', '1996-07-04');
 --INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (1, 1, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
 --INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (1, 1, 'Memory', '4096', 1, '1996-07-04', '1996-07-04');
@@ -178,3 +178,114 @@
 --INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (8, 2, 'Memory', '4096', 1, '1996-07-04', '1996-07-04');
 --INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (9, 2, 'Brand', 'Asus', 1, '1996-07-04', '1996-07-04');
 --INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (9, 2, 'Color', 'White', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (10, 3, 'Brand', 'HP', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (10, 3, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (11, 3, 'Brand', 'Vinga', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (11, 3, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (12, 3, 'Brand', 'TP-Link', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (12, 3, 'Color', 'White', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (13, 3, 'Brand', 'Mikrotik', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (13, 3, 'Color', 'White', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (14, 4, 'Brand', 'Windows', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (14, 4, 'Bit', '32', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (15, 4, 'Brand', 'Windows', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (15, 4, 'Bit', '64', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (16, 4, 'Brand', 'Adobe', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (17, 5, 'Brand', 'Genuine', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (17, 5, 'Volt', '19', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (18, 5, 'Screen size', '17', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (18, 5, 'Color', 'Red', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (19, 5, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (20, 5, 'Brand', 'XEROX', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (21, 6, 'Brand', 'Asus', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (21, 6, 'Screen size', '32', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (22, 6, 'Brand', 'LG', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (22, 6, 'Screen size', '49', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (23, 6, 'Brand', 'Samsung', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (23, 6, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (24, 6, 'Brand', 'Samsung', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (24, 6, 'Screen size', '32', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (25, 6, 'Brand', 'LG', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (25, 6, 'Screen size', '42', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (25, 6, 'Color', 'Red', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (26, 7, 'Brand', 'World vision', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (26, 7, 'Color', 'Red', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (27, 7, 'Brand', 'Romsat', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (27, 7, 'Format', '1080p', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (28, 7, 'Brand', 'Strong', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (28, 7, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (29, 7, 'Brand', 'Asus', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (29, 7, 'Format', '4k', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (30, 7, 'Brand', 'Galaxy', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (30, 7, 'Format', '4k', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (30, 7, 'Color', 'Red', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (31, 8, 'Brand', 'Sven', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (31, 8, 'Format', '5.1', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (32, 8, 'Brand', 'Edifier', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (32, 8, 'Format', '7.1', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (32, 8, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (33, 9, 'Brand', 'Panasonic', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (33, 9, 'Color', 'Blue', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (34, 9, 'Brand', 'Sony', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (35, 9, 'Brand', 'Epson', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (35, 9, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (36, 10, 'Brand', 'Pioneer', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (36, 10, 'Screen size', '3.5', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (37, 10, 'Brand', 'Navitel', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (37, 10, 'Screen size', '7', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (37, 10, 'Color', 'White', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (38, 11, 'Brand', 'Taramps', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (38, 11, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (39, 11, 'Brand', 'Alpine', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (39, 11, 'GPS', 'GPS', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (39, 11, 'Color', 'Red', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (40, 12, 'Brand', 'Car', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (40, 12, 'Color', 'Red', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (41, 13, 'Brand', 'Vision', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (41, 13, 'GPS', 'GPS', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (41, 13, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (42, 14, 'Brand', 'Sent', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (42, 14, 'Color', 'Blue', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (42, 14, 'Format', 'HD', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (43, 14, 'Brand', 'Viofo', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (43, 14, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (44, 15, 'Brand', 'Motorola', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (44, 15, 'Color', 'Silver', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (45, 15, 'Brand', 'Nokia', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (45, 15, 'Color', 'Grey', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (46, 15, 'Brand', 'Nokia', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (46, 15, 'Color', 'White', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (47, 15, 'Brand', 'Alcatel', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (47, 15, 'GPS', 'GPS', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (47, 15, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (48, 16, 'Brand', 'Huawei', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (48, 16, 'Memory', '16GB', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (48, 16, 'RAM', '3GB', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (48, 16, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (49, 16, 'Brand', 'Xiaomi', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (49, 16, 'Memory', '64GB', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (49, 16, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (50, 16, 'Brand', 'Samsung', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (50, 16, 'Memory', '64GB', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (50, 16, 'RAM', '4GB', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (51, 17, 'Brand', 'Kingston', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (51, 17, 'Memory', '16GB', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (52, 18, 'Brand', 'Canon', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (52, 18, 'Kit', '18-55mm', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (53, 18, 'Brand', 'Fujifilm', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (53, 18, 'Kit', '25mm', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (53, 18, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (54, 18, 'Brand', 'Canon', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (54, 18, 'Color', 'Silver', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (55, 19, 'Brand', 'Yongnuo', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (55, 19, 'Color', 'Black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (56, 19, 'Brand', '7artisans', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (56, 19, 'Color', 'Grey', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (57, 20, 'Brand', 'Fotga', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (57, 20, 'Lens', '58mm', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (58, 20, 'Brand', 'UV', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (58, 20, 'Lens', '52-82mm', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (59, 21, 'Brand', 'GoPro', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (59, 21, 'Color', 'black', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (60, 21, 'Brand', 'Campark', 1, '1996-07-04', '1996-07-04');
+--INSERT INTO test.Specifications (ProductId, SubcategoryId, name, value, createdBy, createdAt, updatedAt) VALUES (60, 21, 'Lens', 'Silver', 1, '1996-07-04', '1996-07-04');
